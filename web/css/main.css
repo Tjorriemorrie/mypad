@@ -1,0 +1,152 @@
+html									{height:100%;}
+html, body								{height:100%; font-size:14px; line-height:1em; color:#666; text-shadow:1px 1px 3px #888; background:#ddd; font-family:Verdana;}
+h5										{padding:10px 10px; font-size:16px; font-weight:bold;}
+p										{padding:10px 10px;}
+a, a:visited							{color:#222; text-decoration:none;}
+
+
+/***** General *****/
+.bold									{font-weight:bold;}
+.larger									{font-size:larger;}
+.lighter								{color:#999; font-size:12px;}
+.floatRight								{float:right;}
+.floatLeft								{float:left;}
+.red									{color:red !important;}
+
+
+/***** Table *****/
+.table									{width:100%;}
+.table th								{font-weight:bold; font-size:16px; text-align:left;}
+.table th, .table td					{padding:4px 10px;}
+.table td								{font-size:14px;}
+.table tr:hover td						{background:#ddd;}
+
+
+/***** Forms *****/
+input[type=text]						{width:280px; padding:1px 3px; background:#eee; color:#3A3A0A; border-radius:0.33em;}
+input[type=text]:focus					{background:#ddd;}
+
+
+/***** Quickbar *****/
+.quickbar								{height:18px; color:#666; text-shadow:1px 1px 2px #555; border-bottom:1px solid #222;
+  background-color: #333333;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#333333), to(#000000)); 
+  background-image: -webkit-linear-gradient(top, #333333, #000000); 
+  background-image:    -moz-linear-gradient(top, #333333, #000000); 
+  background-image:     -ms-linear-gradient(top, #333333, #000000); 
+  background-image:      -o-linear-gradient(top, #333333, #000000); 
+  background-image:         linear-gradient(top, #333333, #000000);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#333333', EndColorStr='#000000'); 
+}
+.quickbar a, .quickbar a:visited		{color:#666;}
+.quickbar a:hover, .quickbar a:focus	{color:#888;}
+.quickbar > ul > li						{display:inline-block; padding:1px 6px; font-size:11px;}
+#lastfmMsg, #lastfmFav					{font-size:8px; padding:0;}
+
+
+/***** Content *****/
+#content								{width:97%; min-height:92%; margin:1%; border:0px solid #aaa; border-radius:0.75em; box-shadow:1px 1px 8px #000;
+  background-color: #dddddd;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#dddddd), to(#aaaaaa)); 
+  background-image: -webkit-linear-gradient(top, #dddddd, #aaaaaa); 
+  background-image:    -moz-linear-gradient(top, #dddddd, #aaaaaa); 
+  background-image:     -ms-linear-gradient(top, #dddddd, #aaaaaa); 
+  background-image:      -o-linear-gradient(top, #dddddd, #aaaaaa); 
+  background-image:         linear-gradient(top, #dddddd, #aaaaaa);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#dddddd', EndColorStr='#aaaaaa'); 
+}
+
+
+/***** Bars *****/
+.sidebar								{float:left; width:24%; margin:1%; padding:0;}
+.mainbar								{float:left; width:44%; margin:20px 1% 0; padding:0;}
+
+
+/***** jPlayer *****/
+.jp-playlist							{font-size:11px; color:#555; text-shadow:1px 1px 5px #777; border:0 !important;}
+.jp-audio								{margin:0 auto; box-shadow:0px 0px 3px #999;}
+.jp-interface							{border:0 !important;}
+#jplayerInspector						{display:none;}
+.jp-next								{top:26px; right:18px;}
+
+
+/***** Info *****/
+#info									{display:none; width:420px; margin:12px auto; padding:16px 0; border-radius:0.33em; box-shadow:1px 1px 3px #999;
+  background-color: #eeeeee;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#eeeeee), to(#cccccc)); 
+  background-image: -webkit-linear-gradient(top, #eeeeee, #cccccc); 
+  background-image:    -moz-linear-gradient(top, #eeeeee, #cccccc); 
+  background-image:     -ms-linear-gradient(top, #eeeeee, #cccccc); 
+  background-image:      -o-linear-gradient(top, #eeeeee, #cccccc); 
+  background-image:         linear-gradient(top, #eeeeee, #cccccc);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#eeeeee', EndColorStr='#cccccc'); 
+}
+#info p									{padding:2px 15px;}
+#info label								{display:inline-block; width:70px; margin-left:10px;}
+#info label a, #info label a:visited	{color:#2B3187; font-size:12px;}
+#info label a:hover						{text-decoration:underline;}
+
+
+/**** Decisions ****/
+#decisions								{display:none; width:420px; margin:12px auto; padding:16px 0; border-radius:0.33em; box-shadow:1px 1px 3px #999;
+  background-color: #eeeeee;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#eeeeee), to(#cccccc)); 
+  background-image: -webkit-linear-gradient(top, #eeeeee, #cccccc); 
+  background-image:    -moz-linear-gradient(top, #eeeeee, #cccccc); 
+  background-image:     -ms-linear-gradient(top, #eeeeee, #cccccc); 
+  background-image:      -o-linear-gradient(top, #eeeeee, #cccccc); 
+  background-image:         linear-gradient(top, #eeeeee, #cccccc);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#eeeeee', EndColorStr='#cccccc'); 
+}
+/* rating */
+.selection								{width:96%; margin:1% 2%; border:1px solid #999; box-shadow:0; border-radius:0.5em;
+  background-color: #dddddd;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#dddddd), to(#bbbbbb)); 
+  background-image: -webkit-linear-gradient(top, #dddddd, #bbbbbb);
+  background-image:    -moz-linear-gradient(top, #dddddd, #bbbbbb);
+  background-image:     -ms-linear-gradient(top, #dddddd, #bbbbbb);
+  background-image:      -o-linear-gradient(top, #dddddd, #bbbbbb); 
+  background-image:         linear-gradient(top, #dddddd, #bbbbbb);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#dddddd', EndColorStr='#bbbbbb'); 
+}
+.selection > div						{display:block; float:left;}
+.selectionName							{width:69%;}
+.selection .selectionName .title		{padding:3px 10px 2px; font-size:12px; font-weight:bold;}
+.selection .selectionName .artist		{padding:0 10px; font-size:11px; font-weight:normal; font-style:italic;}
+.selection .selectionName .album		{padding:0 10px 2px; font-size:10px; font-weight:normal; font-variant:small-caps;}
+.selectionChoice						{width:15%; margin:2% 0; padding:0; text-align:center; border-left:1px solid #888; font-choice:12px;}
+.selectionChoice[title=Better]:hover	{cursor:pointer; background-image:-moz-linear-gradient(top, #fff, green);}
+.selectionChoice[title=Worse]:hover		{cursor:pointer; background-image:-moz-linear-gradient(top, #fff, red);}
+/* similar */
+.similarHolder							{position:relative; width:96%; margin:1% 2%; border:1px solid #999; box-shadow:0; border-radius:0.5em; background-image:-moz-linear-gradient(top, #ddd, #bbb);}
+.similarHolder .heading					{position:absolute; top:0; width:100%; font-size:8px; text-align:center; line-height:1em; color:#999;}
+.similarItem							{float:left; display:block; width:50%; cursor:pointer; text-align:center;}
+.similarItem:hover						{background-image:-moz-linear-gradient(top, #fff, #ddd); border-radius:0.5em;}
+.similarItem .title						{font-size:10px; line-height:1.2em;}
+
+
+/*********************************************************************************************/
+/***** Left *****/
+/***** Stats *****/
+#accordion								{opacity:1;}
+#accordion .ui-accordion-content		{padding:0 4px; height:auto !important;}
+#accordion .ui-tabs li a				{padding:2px 0; margin:0 auto; font-size:13px; width:100%; text-align:center; outline:0;}
+#accordion .ui-tabs .ui-tabs-panel		{padding:8px;}
+#accordion .ui-tabs .ui-tabs-nav li		{width:47%;}
+#accordion p							{padding:0; font-size:11px; font-family:Verdana; color:yellow;}
+#accordion p:hover						{background-image:-moz-linear-gradient(right, #222, #111);}
+#accordion p > span						{float: left; display:block; overflow:hidden;}
+#accordion .tabs						{text-shadow:1px 1px 1px black;}
+#accordion .rating						{width:22%; height:1.2em; line-height:1.1em; color:#FF0000; overflow:visible;}
+#accordion .title						{width:77%; height:1.2em; line-height:1.1em; color:#B3BC0B; overflow:hidden;}
+
+
+/*********************************************************************************************/
+/***** Right *****/
+#right h1								{width:100%; height:22px; padding:0; font-size:16px; line-height:1.4em; overflow:hidden;}
+#right h2								{width:100%; height:19px; padding:0; font-size:14px; line-height:1.4em; font-style:italic; color:#777; overflow:hidden;}
+#right h3								{width:100%; height:18px; padding:0; font-size:13px; line-height:1.4em; font-variant:small-caps; color:#888; overflow:hidden; margin-bottom:20px;}
+#right .subtitle						{padding:0; font-size:11px; font-style:italic;}
+#right .similars						{margin:16px 0 0; padding:2% 6% 4%; background-image:-moz-linear-gradient(top, #eee, #d7d7d7); border-radius:0.33em; box-shadow:1px 1px 5px #999;}
+#right .similars dt						{padding:4px 0 8px; font-variant:small-caps; color:#777;}
+#right .similars dd						{width:100%; height:14px; padding:0px 0px; font-size:12px; color:#888; overflow:hidden;}
