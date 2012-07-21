@@ -1,0 +1,85 @@
+<p>
+	<label class="label" for="title"><a class="wiki" href="#title">Title:</a></label>
+	<input id="title" name="title" type="text" value="{{ song.title }}" autocomplete="off" tabindex="1" />
+</p>
+<p>
+	<label class="label" for="artist"><a class="wiki" href="#artist">Artist:</a></label>
+	<input id="artist" name="artist" type="text" value="{% if song.artist is not null %}{{ song.artist.name }}{% endif %}" tabindex="2" />
+</p>
+<p>
+	<label class="label" for="album"><a class="wiki" href="#album">Album:</a></label>
+	<input id="album" name="album" type="text" value="{% if song.album is not null %}{{ song.album.title }}{% endif %}" tabindex="3" />
+</p>
+<p>
+	<label class="label" for="track"><a class="wiki" href="#track">Track:</a></label>
+	<input id="track" name="track" type="text" value="{{ song.track }}" autocomplete="off" tabindex="4" />
+</p>
+<p>
+	<label class="label" for="year"><a class="wiki" href="#year">Year:</a></label>
+	<input id="year" name="year" type="text" value="{% if song.album is not null and song.album.releasedAt is not null %}{{ song.album.releasedAt.format('Y') }}{% endif %}" autocomplete="off" tabindex="5" />
+</p>
+
+
+
+<script type="text/javascript">
+$(function()
+{
+	// on load, fade in, and load next
+	$('#info').fadeIn(400, function()
+	{
+		$('#title').focus();
+
+		// load descisions
+		$('#decisions').load('{{ path('decisions') }}');
+	});
+
+	$('#artist').autocomplete({source:[{{ artists|raw }}]});
+	$('#album').autocomplete({source:[{{ albums|raw }}]});
+	
+	var timeoutSave;
+	$('#info input').change(function()
+	{
+		var $label = $(this).prev();
+	
+		clearTimeout(timeoutSave);
+		timeoutSave = setTimeout(function()
+		{
+			save($label);
+		}, 200);
+	});
+
+
+	$('.wiki').live('click', function()
+	{
+		var q = $(this).parent().next().val();
+		window.open('http://en.wikipedia.org/wiki/Special:Search/' + q.replace(' ', '_'), '_newtab');
+		$(this).parent().next().focus();
+	});
+});
+
+
+function save($label)
+{
+	var $revert = $label.children('a').text();
+	var $name = $label.attr('for');
+	var $value = $label.next().val();
+	$label.children('a').text('Saving...');
+
+	//console.log('revert: ' + $revert);
+	//console.log('name: ' + $name);
+	//console.log('value: ' + $value);
+	
+	$.get('{{ path('info_save') }}', {name:$name, value:$value}, function(data)
+	{
+		if (data.album == 'yes') $('#year').val(data.year);
+		else if (data != $name) alert('Save error: ' + data);
+		else if ($name == 'artist') $('#similar').load('{{ path('get_similar') }}');
+
+		setTimeout(function()
+		{
+			$label.children('a').text($revert);
+		}, 600);
+	});
+}
+</script>
+

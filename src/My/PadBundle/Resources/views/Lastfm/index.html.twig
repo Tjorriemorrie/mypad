@@ -1,0 +1,6 @@
+{% if link %}
+	<li><a href="http://www.last.fm/user/Tjorriemorrie" title="token:{{ lastfmToken }} sk:{{ lastfmSk }}" target="_newtab">Last.fm</a></li>
+{% else %}
+	<li><a class="red" href="{{ url }}" title="Login at Last.fm">Last.fm</a></li>
+{% endif %}
+

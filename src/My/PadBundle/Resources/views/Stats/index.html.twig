@@ -1,0 +1,76 @@
+<div id="accordion">
+
+	<h3><a href="#" title="Artists">Artists</a></h3>
+	<div>
+		<div id="tabsArtists" class="tabs cf">
+			<ul>
+				<li><a href="{{ path('stats_tab', { 'tab': 'artiststop' }) }}">Top</a></li>
+				<li><a href="{{ path('stats_tab', { 'tab': 'artistslow' }) }}">Low</a></li>
+			</ul>
+		</div>
+	</div>
+	
+	<h3><a href="#" title="Albums">Albums</a></h3>
+	<div>
+		<div id="tabsAlbums" class="tabs cf">
+			<ul>
+				<li><a href="{{ path('stats_tab', { 'tab': 'albumstop' }) }}">Top</a></li>
+				<li><a href="{{ path('stats_tab', { 'tab': 'albumslow' }) }}">Low</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<h3><a href="#" title="Songs">Songs</a></h3>
+	<div>
+		<div id="tabsSongs" class="tabs cf">
+			<ul>
+				<li><a href="{{ path('stats_tab', { 'tab': 'songsstop' }) }}">Top</a></li>
+				<li><a href="{{ path('stats_tab', { 'tab': 'songsslow' }) }}">Low</a></li>
+			</ul>
+		</div>
+	</div>
+	
+</div>
+
+
+
+<script type="text/javascript">
+$(function()
+{
+	$('#accordion').accordion(
+	{
+		change	: function(event, ui)
+		{
+			var $tabs = $('#' + ui.newContent.children().attr('id'));
+			var $option = $tabs.tabs('option', 'selected');
+			if ($option == 0) {
+				$tabs.tabs('select', 1);
+				$tabs.tabs('select', 0);
+			} else {
+				$tabs.tabs('select', 0);
+				$tabs.tabs('select', 1);
+			}
+		}
+	});
+	
+	
+	$('.tabs').tabs(
+	{
+		ajaxOptions:
+		{
+			error	: function(xhr, status, index, anchor)
+			{
+				$(anchor.hash).html(
+					"Couldn't load this tab. We'll try to fix this as soon as possible. " +
+					"If this wouldn't be a demo."
+				);
+			}
+		},
+		select	: function(event, ui)
+		{
+			//$('#' + ui.panel.id).load('{{ path('stats_tab') }}/' + ui.panel.id);
+		},
+	});
+});
+</script>
+

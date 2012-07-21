@@ -1,0 +1,8 @@
+{% extends 'MyPadBundle::layout.html.twig' %}
+
+{% block title %}Scan | {{ parent() }}{% endblock %}
+
+{% block content %}
+	<p>Scanned {{ audio_path }} and added {{ added }} new audio files.</p>
+{% endblock %}
+

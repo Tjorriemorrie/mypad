@@ -1,0 +1,8 @@
+{% for song in songs %}
+	<p>
+		<span class="rating">{{ song.displayRating|raw }}</span>
+		<span class="title">{{ song.title }}</span>
+	</p>
+{% else %}
+	<p>No songs</p>
+{% endfor %}

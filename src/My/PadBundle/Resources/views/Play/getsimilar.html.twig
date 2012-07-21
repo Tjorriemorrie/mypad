@@ -1,0 +1,37 @@
+<div class="similarHolder cf">
+	<h4 class="heading">Similar</h4>
+	{% for similar in similars %}
+		<div id="{{ similar.id }}" class="similarItem">
+			<h5 class="title">{{ similar.name|truncate(24) }}</h5>
+		</div>
+	{% else %}
+		<h5>None available</h5>
+	{% endfor %}
+</div>
+
+
+
+<script type="text/javascript">
+$(function()
+{
+	// submit winner of similar
+	$('.similarItem').mouseup(function()
+	{
+		var $winner = $(this).attr('id');
+		var $loser = $(this).siblings('div').attr('id');
+		//console.log('winner id = ' + $winner + ' and loser id = ' + $loser);
+		
+		$('.similarHolder').html('<h5>saving...</h5>');
+		$('#similar').before($('#rating'));
+		$.get('{{ path('set_similar') }}', {winner:$winner, loser:$loser}, function(data)
+		{
+			if (data != 'win') alert(data);
+			$('#right').load('{{ path('detail') }}');
+			
+			$('.similarHolder').html('<h5>loading...</h5>');
+			$('#similar').load('{{ path('get_similar') }}');
+		});
+	});
+});
+</script>
+

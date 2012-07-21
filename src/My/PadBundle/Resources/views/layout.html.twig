@@ -1,0 +1,33 @@
+{% extends '::base.html.twig' %}
+
+
+{% block title %}Pad | {{ parent() }}{% endblock %}
+
+
+{% block javascripts %}
+	{{ parent() }}
+	<script type="text/javascript" src="{{ asset('stats/tip.js') }}"></script>
+{% endblock %}
+
+
+{% block body %}
+	<div class="quickbar cf">
+		<ul>
+			<li><a href="{{ path('home') }}" title="Home">Home</a></li>
+			<li><a href="{{ path('scan') }}" title="Scan">Scan</a></li>
+			<li><a href="{{ path('clean') }}" title="Clean">Clean</a></li>
+			{% render path('lastfm') %}
+			<li id="lastfmMsg">&mdash;</li>
+			<li id="lastfmFav" class="red">&nbsp;</li>
+			
+			<li class="floatRight">{% render path('size', { 'for': 'artists' }) %}</li>
+			<li class="floatRight">{% render path('size', { 'for': 'albums' }) %}</li>
+			<li class="floatRight">{% render path('size', { 'for': 'songs' }) %}</li>
+			<li id="tip" class="floatRight"></li>
+		</ul>
+	</div>
+	
+	<div id="content">
+		{% block content %}{% endblock %}
+	</div>
+{% endblock %}

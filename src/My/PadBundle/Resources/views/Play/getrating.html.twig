@@ -1,0 +1,45 @@
+<div id="{% if compete is not null %}{{ compete.id }}{% endif %}" class="selection cf">
+	{% if compete is not null %}
+		<div class="selectionName">
+			<p class="title">{{ compete.title|truncate(32) }}</p>
+			<p class="artist">{{ compete.artist.name|truncate(40) }}</p>
+			<p class="album">{% if compete.album is not null %}{{ compete.album.title|truncate(40) }}{% else %}&nbsp;{% endif %}</p>
+		</div>
+		<div title="Better" class="selectionChoice">
+			<p>Better</p>
+		</div>
+		<div title="Worse" class="selectionChoice">
+			<p>Worse</p>
+		</div>
+	{% else %}
+		<h5>Nothing to rate</h5>
+	{% endif %}
+</div>
+
+
+
+<script type="text/javascript">
+$(function()
+{
+	// submit winner of selection/rating
+	$('.selectionChoice').mouseup(function()
+	{
+		var $id = $(this).parent().attr('id');
+		var $choice = $(this).attr('title');
+		//console.log('sending winner ' + $id + ' of selection ' + $choice);
+		
+		$('.selectionChoice').text('');
+		$('.selectionName').html('<h5>saving...</h5>');
+		$('#rating').before($('#rating').next());
+		$.get('{{ path('set_rating') }}', {id:$id, choice:$choice}, function(data)
+		{
+			if (data != 'win') alert(data);
+			$('#right').load('{{ path('detail') }}');
+			
+			$('.selectionName').html('<h5>loading...</h5>');
+			$('#rating').load('{{ path('get_rating') }}');
+		});
+	});
+});
+</script>
+

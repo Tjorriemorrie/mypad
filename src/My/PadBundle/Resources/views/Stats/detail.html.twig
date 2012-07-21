@@ -1,0 +1,32 @@
+<h1>{% if song.title is sameas(null) %}&lt;title&gt;{% else %}{{ song.title }}{% endif %}</h1>
+<h2>{% if song.artist is sameas(null) %}&lt;artist&gt;{% else %}{{ song.artist.name }}{% endif %}</h2>
+<h3>{% if song.album is sameas(null) %}&lt;album&gt;{% else %}{{ song.album.title }}{% endif %}</h2>
+
+<h6 class="subtitle"><span class="larger">
+	{% if song.rating is null %}Unrated{% else %}<strong>{{ song.displayRating|raw }}</strong> after {{ song.rated }} ratings{% endif %}
+</span></h6>
+<h6 class="subtitle">Played {{ song.playcount }} times</h6>
+<br>
+<h6 class="subtitle">
+	{{ song.displayPriority|raw }} priority	
+</h6>
+
+
+<div class="similars">
+	<dl>
+		<dt>Similar artists</dt>
+		{% if similars is null %}
+			<dd class="larger">No artist similar for now</dd>
+		{% else %}
+			{% for name, score in similars %}
+				<dd>[{{ score }}] {{ name }}</dd>
+			{% endfor %}
+		{% endif %}
+	</dl>
+</div>
+
+
+
+<script type="text/javascript">
+document.title = "{{ song.title|raw }}{% if song.artist is not null %} :: {{ song.artist.name|raw }}{% endif %}";
+</script>

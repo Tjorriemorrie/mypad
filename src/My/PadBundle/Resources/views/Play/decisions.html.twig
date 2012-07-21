@@ -1,0 +1,17 @@
+<div id="rating"></div>
+<div id="similar"></div>
+
+
+
+<script type="text/javascript">
+$(function()
+{
+	// on load, fade in, and load ratings and similars
+	$('#decisions').fadeIn(400, function()
+	{
+		$('#rating').load('{{ path('get_rating') }}');
+		$('#similar').load('{{ path('get_similar') }}');
+	});
+});
+</script>
+

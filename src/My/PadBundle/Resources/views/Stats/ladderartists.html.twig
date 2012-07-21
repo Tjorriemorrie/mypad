@@ -1,0 +1,8 @@
+{% for artist in artists %}
+	<p>
+		<span class="rating">{{ artist.displayRating|raw }}</span>
+		<span class="title">{{ artist.name }}</span>
+	</p>
+{% else %}
+	<p>No artists</p>
+{% endfor %}

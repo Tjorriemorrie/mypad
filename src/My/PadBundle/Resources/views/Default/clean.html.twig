@@ -1,0 +1,14 @@
+{% extends 'MyPadBundle::layout.html.twig' %}
+
+{% block title %}Clean | {{ parent() }}{% endblock %}
+
+{% block content %}
+	<p>Cleaned {{ audio_path }} and removed:
+		<ul>
+			<li>{{ albums }} albums</li>
+			<li>{{ artists }} artists</li>
+			<li>{{ songs }} songs</li>
+		</ul>
+	</p>
+{% endblock %}
+

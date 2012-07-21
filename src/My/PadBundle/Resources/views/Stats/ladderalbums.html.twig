@@ -1,0 +1,8 @@
+{% for album in albums %}
+	<p>
+		<span class="rating">{{ album.displayRating|raw }}</span>
+		<span class="title">{{ album.title }}</span>
+	</p>
+{% else %}
+	<p>No albums</p>
+{% endfor %}
