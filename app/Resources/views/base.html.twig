@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        
+        <title>{% block title %}My{% endblock %}</title>
+        
+        <link rel="shortcut icon" href="{{ asset('favicon.ico') }}" />
+
+    	<link href="{{ asset('/css/reset.css') }}" type="text/css" rel="stylesheet" />
+    	<link href="{{ asset('/css/main.css') }}" type="text/css" rel="stylesheet" />
+    	<link href="{{ asset('/css/cf.css') }}" type="text/css" rel="stylesheet" />
+    	<link href="{{ asset('/css/brushedmetal.css') }}" type="text/css" rel="stylesheet" />
+        
+    	<script type="text/javascript" src="{{ asset('/jqueryui/js/jquery-1.6.2.min.js') }}"></script>
+    	<script type="text/javascript" src="{{ asset('/jqueryui/js/jquery-ui-1.8.16.custom.min.js') }}"></script>
+    	<link type="text/css" href="{{ asset('/jqueryui/css/vader/jquery-ui-1.8.16.custom.css') }}" rel="stylesheet" media="screen" />
+    	
+    	<script type="text/javascript" src="{{ asset('/jplayer/jquery.jplayer.min.js') }}"></script>
+    	<script type="text/javascript" src="{{ asset('/jplayer/jquery.jplayer.inspector.js') }}"></script>
+		<link type="text/css" href="{{ asset('/jplayer/bluemonday/jplayer.blue.monday.css') }}" rel="stylesheet" media="screen" />
+		
+    </head>
+
+    <body>
+        {% block body %}{% endblock %}
+		{% block javascripts %}{% endblock %}
+    </body>
+</html>
