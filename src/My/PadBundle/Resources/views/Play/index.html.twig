@@ -61,7 +61,7 @@ $(function()
 		swfPath				: '/jplayer',
 		supplied			: '{{ song.codec }}',
 		preload				: 'auto',
-		volume				: Math.max(0.10, {% if song.rating is null %}0{% else %}{{ (song.rating - 0.50) * 2 }}{% endif %}),
+		volume				: Math.max(0.50, {% if song.rating is null %}0{% else %}{{ (song.rating - 0.50) * 2 }}{% endif %}),
 		idPrefix			: 'jp',
 		wmode				: 'window',
 		ready				: function(event)
