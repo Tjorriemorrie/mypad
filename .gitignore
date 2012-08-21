@@ -12,5 +12,3 @@ web/bundles/*
 app/config/parameters.ini
 
 web/audio
-
-.idea
