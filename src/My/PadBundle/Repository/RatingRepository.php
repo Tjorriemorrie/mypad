@@ -44,6 +44,10 @@ class RatingRepository extends EntityRepository
 		$countSongs = $this->getEntityManager()->getRepository('MyPadBundle:Song')->getSize(true);
 		$avgRated = $this->getEntityManager()->getRepository('MyPadBundle:Song')->getAverageRatedCount();
 
+		$avgRated /= 2;
+		$diff = ceil($avgRatedAt->diff(new \DateTime())->days / 2);
+		$avgRatedAt->modify('-' . $diff . ' days');
+
 		$failCount = 0;
 		do {
 			$failCount++;
