@@ -44,9 +44,9 @@ class RatingRepository extends EntityRepository
 		$countSongs = $this->getEntityManager()->getRepository('MyPadBundle:Song')->getSize(true);
 		$avgRated = $this->getEntityManager()->getRepository('MyPadBundle:Song')->getAverageRatedCount();
 
+		$daysOut = $avgRatedAt->diff(new \DateTime())->days;
+		$avgRatedAt->modify('-' . ceil($daysOut / 2) . ' days');
 		$avgRated /= 2;
-		$diff = ceil($avgRatedAt->diff(new \DateTime())->days / 2);
-		$avgRatedAt->modify('-' . $diff . ' days');
 
 		$failCount = 0;
 		do {
@@ -54,7 +54,7 @@ class RatingRepository extends EntityRepository
 			if ($failCount > $countSongs) return;
 
 			$avgRatedAt->modify('+1 minute');
-			$avgRated += 0.1;
+			$avgRated += $avgRated / $daysOut * 24 * 60;
 
 			$qb = $this->getEntityManager()->createQueryBuilder();
 			$song = $qb->select('s')->from('MyPadBundle:Song', 's')
