@@ -58,7 +58,7 @@ $(function()
 	$('#jp_jplayer_1').jPlayer(
 	{
 		solution			: 'html, flash',
-		swfPath				: '/jplayer',
+		swfPath				: '/jQuery.jPlayer.2.1.0',
 		supplied			: '{{ song.codec }}',
 		preload				: 'auto',
 		volume				: Math.max(0.50, {% if song.rating is null %}0{% else %}{{ (song.rating - 0.50) * 2 }}{% endif %}),
@@ -66,7 +66,7 @@ $(function()
 		wmode				: 'window',
 		ready				: function(event)
 		{
-			//console.log('player rdy');
+			console.log('player rdy');
 			setMedia();
 		},
 		ended				: function(event)
@@ -92,16 +92,16 @@ $(function()
 	// having some trouble, so checking the loading at intervals to ensure loading/reloading
 	checkInterval = setInterval(function()
 	{
-		//console.log('interval');
-		//console.log($('#jp_jplayer_1').data("jPlayer").status);
+		console.log('interval');
+		console.log($('#jp_jplayer_1').data("jPlayer").status);
 		// currentTime | currentPercentAbsolute | currentPercentRelative
 		
 		if ($('#jp_jplayer_1').data("jPlayer").status.srcSet && $('#jp_jplayer_1').data("jPlayer").status.duration > 0) {
-			//console.log('interval check good');
+			console.log('interval check good');
 			clearInterval(checkInterval);
 			setInfo();
 		} else {
-			//console.log('interval check bad');
+			console.log('interval check bad');
 			$('#jplayerInspector').show();
 			countFail++;
 			if (countFail >= 5) { 
@@ -116,7 +116,7 @@ $(function()
 	// next
 	$('.jp-next').click(function()
 	{
-		//console.log('next');
+		console.log('next');
 		
 		$("#jp_jplayer_1").jPlayer('playHead', 99).jPlayer('play');
 	});
@@ -126,7 +126,7 @@ $(function()
 function setMedia()
 {
 	document.title = 'ready';
-	//console.log('setMedia');
+	console.log('setMedia');
 	
 	$('#jp_jplayer_1').jPlayer('setMedia',
 	{
@@ -137,7 +137,7 @@ function setMedia()
 
 function setInfo()
 {
-	//console.log('setInfo');
+	console.log('setInfo');
 	
 	// load song details
 	$('#right').load('{{ path('detail') }}', function()
