@@ -63,11 +63,11 @@ input[type=text]:focus					{background:#ddd;}
 
 
 /***** jPlayer *****/
-.jp-playlist							{font-size:11px; color:#555; text-shadow:1px 1px 5px #777; border:0 !important;}
 .jp-audio								{margin:0 auto; box-shadow:0px 0px 3px #999;}
 .jp-interface							{border:0 !important;}
+.jp-next								{position:absolute; top:19px; right:8px;}
+.jp-title   							{font-size:11px; color:#555; text-shadow:1px 1px 5px #777; border:0 !important;}
 #jplayerInspector						{display:none;}
-.jp-next								{top:26px; right:18px;}
 
 
 /***** Info *****/

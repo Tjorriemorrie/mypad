@@ -38,7 +38,7 @@
               <file leaf-file-name="index.html.twig" pinned="false" current="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/src/My/PadBundle/Resources/views/Play/index.html.twig">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state line="74" column="42" selection-start="1814" selection-end="1814" vertical-scroll-proportion="0.044854883">
+                    <state line="82" column="17" selection-start="2442" selection-end="2442" vertical-scroll-proportion="0.044854883">
                       <folding />
                     </state>
                   </provider>
@@ -48,19 +48,19 @@
           </split-first>
           <split-second>
             <leaf>
-              <file leaf-file-name="base.html.twig" pinned="false" current="true" current-in-tab="true">
+              <file leaf-file-name="base.html.twig" pinned="false" current="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state line="21" column="8" selection-start="1338" selection-end="1338" vertical-scroll-proportion="0.6692913">
+                    <state line="21" column="8" selection-start="1338" selection-end="1338" vertical-scroll-proportion="-9.807693">
                       <folding />
                     </state>
                   </provider>
                 </entry>
               </file>
-              <file leaf-file-name="index.html.twig" pinned="false" current="false" current-in-tab="false">
+              <file leaf-file-name="index.html.twig" pinned="false" current="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/src/My/PadBundle/Resources/views/Play/index.html.twig">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state line="55" column="0" selection-start="1242" selection-end="1242" vertical-scroll-proportion="-0.0">
+                    <state line="10" column="61" selection-start="413" selection-end="413" vertical-scroll-proportion="0.35951662">
                       <folding />
                     </state>
                   </provider>
@@ -75,16 +75,25 @@
           <file leaf-file-name="index.html.twig" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/My/PadBundle/Resources/views/Play/index.html.twig">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="80" column="39" selection-start="1964" selection-end="1964" vertical-scroll-proportion="0.0">
+                <state line="88" column="20" selection-start="2592" selection-end="2592" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="RatingRepository.php" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="RatingRepository.php" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/My/PadBundle/Repository/RatingRepository.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="56" column="56" selection-start="1759" selection-end="1759" vertical-scroll-proportion="0.020432692">
+                <state line="69" column="44" selection-start="2216" selection-end="2216" vertical-scroll-proportion="-9.153846">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="main.css" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/web/css/main.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="66" column="12" selection-start="2933" selection-end="2933" vertical-scroll-proportion="0.35664335">
                   <folding />
                 </state>
               </provider>
@@ -108,8 +117,9 @@
         <option value="$PROJECT_DIR$/app/config/parameters.ini" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/My/PadBundle/Repository/RatingRepository.php" />
-        <option value="$PROJECT_DIR$/src/My/PadBundle/Resources/views/Play/index.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
+        <option value="$PROJECT_DIR$/src/My/PadBundle/Resources/views/Play/index.html.twig" />
+        <option value="$PROJECT_DIR$/web/css/main.css" />
       </list>
     </option>
   </component>
@@ -171,6 +181,38 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="mypad" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mypad" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mypad" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mypad" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mypad" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -391,6 +433,17 @@
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
   </component>
+  <component name="PublishConfig">
+    <servers>
+      <server id="297b7333-8d98-4879-9f32-7aad6b5b20e5">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </server>
+    </servers>
+  </component>
   <component name="RunManager">
     <list size="0" />
   </component>
@@ -509,23 +562,30 @@
         <state line="6" column="9" selection-start="77" selection-end="77" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="8" selection-start="1338" selection-end="1338" vertical-scroll-proportion="-9.807693">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/My/PadBundle/Repository/RatingRepository.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="56" selection-start="1759" selection-end="1759" vertical-scroll-proportion="0.020432692">
+        <state line="69" column="44" selection-start="2216" selection-end="2216" vertical-scroll-proportion="-9.153846">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/My/PadBundle/Resources/views/Play/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="0" selection-start="1242" selection-end="1242" vertical-scroll-proportion="-0.0">
+        <state line="88" column="20" selection-start="2592" selection-end="2592" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
+    <entry file="file://$PROJECT_DIR$/web/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="8" selection-start="1338" selection-end="1338" vertical-scroll-proportion="0.6692913">
+        <state line="66" column="12" selection-start="2933" selection-end="2933" vertical-scroll-proportion="0.35664335">
           <folding />
         </state>
       </provider>
