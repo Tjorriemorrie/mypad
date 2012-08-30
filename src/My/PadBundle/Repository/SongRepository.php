@@ -292,7 +292,7 @@ class SongRepository extends EntityRepository
 		$playedAtAvg = $this->getAveragePlayedAt();
 		$countSongs = $this->getSize(true);
 		if (!$countSongs) return null;
-		$decrement = 4 / $countSongs;
+		$decrement = 2 / $countSongs;
 
 		$priorityCutoff = 1;
 		do {
