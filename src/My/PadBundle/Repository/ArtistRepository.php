@@ -99,7 +99,7 @@ class ArtistRepository extends EntityRepository
 	{
 		$qb = $this->getEntityManager()->createQueryBuilder();
 		$artist = $qb->select('a')->from('My\PadBundle\Entity\Artist', 'a')
-			->where('a.rating > ?1')->setParameter(1, 0)
+//			->where('a.rating > ?1')->setParameter(1, 0)
 			->andWhere($qb->expr()->orx(
 				$qb->expr()->lt('a.fullAt', '?2'),
 				'a.fullAt IS NULL'

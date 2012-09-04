@@ -22,11 +22,9 @@
 
 
 <script type="text/javascript">
-$(function()
-{
+$(function() {
 	// on load, fade in, and load next
-	$('#info').fadeIn(400, function()
-	{
+	$('#info').fadeIn(400, function() {
 		$('#title').focus();
 
 		// load descisions
@@ -37,9 +35,13 @@ $(function()
 	$('#album').autocomplete({source:[{{ albums|raw }}]});
 	
 	var timeoutSave;
-	$('#info input').change(function()
-	{
+	$('#info').on('autocompleteselect', 'input', function() {
+		$(this).trigger('change');
+	});
+	$('#info').on('change', 'input', function() {
+		//console.log('input changed:');
 		var $label = $(this).prev();
+		//console.log('label = ' + $label);
 	
 		clearTimeout(timeoutSave);
 		timeoutSave = setTimeout(function()
@@ -58,8 +60,8 @@ $(function()
 });
 
 
-function save($label)
-{
+function save($label) {
+	//console.log('Save:');
 	var $revert = $label.children('a').text();
 	var $name = $label.attr('for');
 	var $value = $label.next().val();
@@ -69,8 +71,7 @@ function save($label)
 	//console.log('name: ' + $name);
 	//console.log('value: ' + $value);
 	
-	$.get('{{ path('info_save') }}', {name:$name, value:$value}, function(data)
-	{
+	$.get('{{ path('info_save') }}', {name:$name, value:$value}, function(data) {
 		if (data.album == 'yes') $('#year').val(data.year);
 		else if (data != $name) alert('Save error: ' + data);
 		else if ($name == 'artist') $('#similar').load('{{ path('get_similar') }}');
@@ -82,4 +83,3 @@ function save($label)
 	});
 }
 </script>
-
