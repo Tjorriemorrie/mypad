@@ -292,12 +292,19 @@ class SongRepository extends EntityRepository
 		$playedAtAvg = $this->getAveragePlayedAt();
 		$countSongs = $this->getSize(true);
 		if (!$countSongs) return null;
-		$decrement = 2 / $countSongs;
+		$decrementMin = 1 / $countSongs;
 
 		$priorityCutoff = 1;
 		do {
+			$decrementCalc = $priorityCutoff * 0.001;
+			$decrement = max($decrementMin, $decrementCalc);
+//			if ($decrementCalc < $decrementMin) {
+//				die('calc < min at ' . $priorityCutoff);
+//			}
 			$priorityCutoff -= $decrement;
+
 			$playedAtAvg->modify('+1 minute');
+
 			$qb = $this->getEntityManager()->createQueryBuilder();
 			$song = $qb->select('s')->from('MyPadBundle:Song', 's')
 				->setFirstResult(rand(0, ($countSongs - 1)))

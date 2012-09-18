@@ -17,19 +17,29 @@
   <component name="DaemonCodeAnalyzer">
     <disable_hints />
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="mypad" />
   </component>
   <component name="FileEditorManager">
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
-        <splitter split-orientation="vertical" split-proportion="0.5">
+        <splitter split-orientation="vertical" split-proportion="0.43191963">
           <split-first>
             <leaf>
-              <file leaf-file-name="StatsController.php" pinned="false" current="false" current-in-tab="true">
+              <file leaf-file-name="StatsController.php" pinned="false" current="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/src/My/PadBundle/Controller/StatsController.php">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state line="130" column="40" selection-start="4728" selection-end="4728" vertical-scroll-proportion="0.73315364">
+                    <state line="140" column="44" selection-start="4982" selection-end="4982" vertical-scroll-proportion="-7.1923075">
+                      <folding />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file leaf-file-name="DefaultController.php" pinned="false" current="false" current-in-tab="true">
+                <entry file="file://$PROJECT_DIR$/src/My/PadBundle/Controller/DefaultController.php">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state line="18" column="0" selection-start="470" selection-end="470" vertical-scroll-proportion="0.21383648">
                       <folding />
                     </state>
                   </provider>
@@ -42,7 +52,7 @@
               <file leaf-file-name="base.html.twig" pinned="false" current="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state line="12" column="48" selection-start="552" selection-end="552" vertical-scroll-proportion="-5.1923075">
+                    <state line="12" column="48" selection-start="552" selection-end="552" vertical-scroll-proportion="0.0">
                       <folding />
                     </state>
                   </provider>
@@ -51,16 +61,16 @@
               <file leaf-file-name="index.html.twig" pinned="false" current="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/src/My/PadBundle/Resources/views/Play/index.html.twig">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state line="71" column="35" selection-start="2242" selection-end="2242" vertical-scroll-proportion="28.76923">
+                    <state line="71" column="35" selection-start="2242" selection-end="2242" vertical-scroll-proportion="0.0">
                       <folding />
                     </state>
                   </provider>
                 </entry>
               </file>
-              <file leaf-file-name="info.html.twig" pinned="false" current="true" current-in-tab="true">
+              <file leaf-file-name="info.html.twig" pinned="false" current="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/src/My/PadBundle/Resources/views/Play/info.html.twig">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state line="37" column="61" selection-start="1559" selection-end="1559" vertical-scroll-proportion="0.3163539">
+                    <state line="37" column="61" selection-start="1559" selection-end="1559" vertical-scroll-proportion="0.03846154">
                       <folding />
                     </state>
                   </provider>
@@ -71,53 +81,70 @@
         </splitter>
       </split-first>
       <split-second>
-        <leaf>
-          <file leaf-file-name="index.html.twig" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/My/PadBundle/Resources/views/Play/index.html.twig">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="95" column="0" selection-start="2666" selection-end="2666" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/web/css/main.css">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="66" column="12" selection-start="2933" selection-end="2933" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="SongRepository.php" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/My/PadBundle/Repository/SongRepository.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="7" column="17" selection-start="100" selection-end="100" vertical-scroll-proportion="-4.576923">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="AlbumRepository.php" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/My/PadBundle/Repository/AlbumRepository.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="143" column="0" selection-start="3822" selection-end="3822" vertical-scroll-proportion="-7.1923075">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="ArtistRepository.php" pinned="false" current="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/My/PadBundle/Repository/ArtistRepository.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="110" column="12" selection-start="2662" selection-end="2662" vertical-scroll-proportion="0.6666667">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
+        <splitter split-orientation="vertical" split-proportion="0.5770089">
+          <split-first>
+            <leaf>
+              <file leaf-file-name="index.html.twig" pinned="false" current="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/src/My/PadBundle/Resources/views/Play/index.html.twig">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state line="95" column="0" selection-start="2666" selection-end="2666" vertical-scroll-proportion="0.0">
+                      <folding />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/web/css/main.css">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state line="66" column="12" selection-start="2933" selection-end="2933" vertical-scroll-proportion="0.0">
+                      <folding />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file leaf-file-name="SongRepository.php" pinned="false" current="false" current-in-tab="true">
+                <entry file="file://$PROJECT_DIR$/src/My/PadBundle/Repository/SongRepository.php">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state line="94" column="20" selection-start="2612" selection-end="2612" vertical-scroll-proportion="0.6196868">
+                      <folding />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file leaf-file-name="AlbumRepository.php" pinned="false" current="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/src/My/PadBundle/Repository/AlbumRepository.php">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state line="143" column="0" selection-start="3822" selection-end="3822" vertical-scroll-proportion="0.0">
+                      <folding />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file leaf-file-name="ArtistRepository.php" pinned="false" current="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/src/My/PadBundle/Repository/ArtistRepository.php">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state line="110" column="12" selection-start="2662" selection-end="2662" vertical-scroll-proportion="-20.884615">
+                      <folding />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+            </leaf>
+          </split-first>
+          <split-second>
+            <leaf>
+              <file leaf-file-name="SongRepository.php" pinned="false" current="true" current-in-tab="true">
+                <entry file="file://$PROJECT_DIR$/src/My/PadBundle/Repository/SongRepository.php">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state line="303" column="13" selection-start="8099" selection-end="8099" vertical-scroll-proportion="0.6741214">
+                      <folding />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+            </leaf>
+          </split-second>
+        </splitter>
       </split-second>
     </splitter>
   </component>
@@ -137,18 +164,20 @@
         <option value="$PROJECT_DIR$/src/My/PadBundle/Repository/RatingRepository.php" />
         <option value="$PROJECT_DIR$/web/css/main.css" />
         <option value="$PROJECT_DIR$/src/My/PadBundle/Resources/views/Play/index.html.twig" />
-        <option value="$PROJECT_DIR$/src/My/PadBundle/Repository/SongRepository.php" />
         <option value="$PROJECT_DIR$/src/My/PadBundle/Repository/ArtistRepository.php" />
         <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
         <option value="$PROJECT_DIR$/src/My/PadBundle/Resources/views/Play/info.html.twig" />
+        <option value="$PROJECT_DIR$/src/My/PadBundle/Controller/DefaultController.php" />
+        <option value="$PROJECT_DIR$/src/My/PadBundle/Repository/SongRepository.php" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="78" />
-    <option name="width" value="1843" />
-    <option name="height" value="1040" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -344,6 +373,58 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="My" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PadBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Repository" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mypad" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mypad" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="My" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PadBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mypad" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mypad" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -405,9 +486,10 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
-    <property name="options.searchVisible" value="true" />
+    <property name="options.lastSelected" value="reference.webide.settings.project.settings.framework.structure" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RunManager">
     <list size="0" />
@@ -440,20 +522,23 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="78" y="0" width="1843" height="1040" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="CSS-X-Fire" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13138686" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19988771" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16862327" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Framework MVS Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -484,7 +569,6 @@
     <option name="PERFORM_ADD_REMOVE_IN_BACKGROUND" value="true" />
     <option name="PERFORM_ROLLBACK_IN_BACKGROUND" value="false" />
     <option name="CHECK_LOCALLY_CHANGED_CONFLICTS_IN_BACKGROUND" value="false" />
-    <option name="ENABLE_BACKGROUND_PROCESSES" value="false" />
     <option name="CHANGED_ON_SERVER_INTERVAL" value="60" />
     <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
     <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
@@ -494,7 +578,6 @@
     <option name="SOFT_WRAPS_IN_SHORT_DIFF" value="true" />
     <option name="INCLUDE_TEXT_INTO_PATCH" value="false" />
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
-    <option name="CREATE_PATCH_EXPAND_DETAILS_DEFAULT" value="true" />
     <option name="SHOW_FILE_HISTORY_DETAILS" value="true" />
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
@@ -517,6 +600,34 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/web/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="66" column="12" selection-start="2933" selection-end="2933" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/My/PadBundle/Repository/SongRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="17" selection-start="100" selection-end="100" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/My/PadBundle/Repository/AlbumRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="143" column="0" selection-start="3822" selection-end="3822" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/My/PadBundle/Repository/ArtistRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="110" column="12" selection-start="2662" selection-end="2662" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/config/parameters.ini">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="23" selection-start="174" selection-end="174" vertical-scroll-proportion="0.11943794" />
@@ -534,54 +645,63 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="12" selection-start="2933" selection-end="2933" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/My/PadBundle/Repository/SongRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="17" selection-start="100" selection-end="100" vertical-scroll-proportion="-4.576923">
+        <state line="66" column="12" selection-start="2933" selection-end="2933" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/My/PadBundle/Repository/AlbumRepository.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="143" column="0" selection-start="3822" selection-end="3822" vertical-scroll-proportion="-7.1923075">
+        <state line="143" column="0" selection-start="3822" selection-end="3822" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/My/PadBundle/Repository/ArtistRepository.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="110" column="12" selection-start="2662" selection-end="2662" vertical-scroll-proportion="0.6666667">
+        <state line="110" column="12" selection-start="2662" selection-end="2662" vertical-scroll-proportion="-20.884615">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/My/PadBundle/Resources/views/Play/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="35" selection-start="2242" selection-end="2242" vertical-scroll-proportion="28.76923">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/My/PadBundle/Controller/StatsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="130" column="40" selection-start="4728" selection-end="4728" vertical-scroll-proportion="0.73315364">
+        <state line="71" column="35" selection-start="2242" selection-end="2242" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="48" selection-start="552" selection-end="552" vertical-scroll-proportion="-5.1923075">
+        <state line="12" column="48" selection-start="552" selection-end="552" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/My/PadBundle/Resources/views/Play/info.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="61" selection-start="1559" selection-end="1559" vertical-scroll-proportion="0.3163539">
+        <state line="37" column="61" selection-start="1559" selection-end="1559" vertical-scroll-proportion="0.03846154">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/My/PadBundle/Controller/StatsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="140" column="44" selection-start="4982" selection-end="4982" vertical-scroll-proportion="-7.1923075">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/My/PadBundle/Controller/DefaultController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="0" selection-start="470" selection-end="470" vertical-scroll-proportion="0.21383648">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/My/PadBundle/Repository/SongRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="303" column="13" selection-start="8099" selection-end="8099" vertical-scroll-proportion="0.6741214">
           <folding />
         </state>
       </provider>
