@@ -8,6 +8,7 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 
+
 class StatsController extends Controller
 {
     /**
@@ -141,6 +142,7 @@ class StatsController extends Controller
     public function slotsAction($id, $slots)
     {
     	$em = $this->getDoctrine()->getEntityManager();
+	    /* @var Song $song */
     	$song = $em->getRepository('MyPadBundle:Song')->find($id);
     	if (!$song) return new Response('Song id not found: ' . $id);
 

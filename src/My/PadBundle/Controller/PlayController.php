@@ -8,6 +8,9 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 
+use My\PadBundle\Entity\Song;
+
+
 class PlayController extends Controller
 {
     /**
@@ -42,11 +45,12 @@ class PlayController extends Controller
     	$song = $em->getRepository('MyPadBundle:Song')->find($songId);
     	if (!$song) throw $this->createNotFoundException('No song to play');
 
-		$maxPlaycount = $em->getRepository('MyPadBundle:Song')->getMaxPlaycount();
-    	$song->postplay($maxPlaycount);
-    	$em->getRepository('MyPadBundle:Album')->checkArtist($song);
-
-		$em->flush();
+	    if (!is_null($song->getTitle()) && !is_null($song->getArtist())) {
+			$maxPlaycount = $em->getRepository('MyPadBundle:Song')->getMaxPlaycount();
+	        $song->postplay($maxPlaycount);
+	        $em->getRepository('MyPadBundle:Album')->checkArtist($song);
+			$em->flush();
+	    }
 
 		return $this->redirect($this->generateUrl('play'));
 	}
