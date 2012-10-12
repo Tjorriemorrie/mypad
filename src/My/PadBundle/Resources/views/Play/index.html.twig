@@ -91,7 +91,7 @@ $(function()
 			} else {
 				loadNextSong();
 			}
-		},
+		}
 	});
 
 
@@ -130,14 +130,15 @@ $(function()
 });
 
 
-function setMedia()
-{
+// set media
+function setMedia() {
 	document.title = 'ready';
-	//console.log('setMedia');
+	//console.log('setMedia:');
 
-	$('#jquery_jplayer_1').jPlayer('setMedia',
-	{
-		{{ song.codec }}: "/audio/{{ song.path|raw }}"
+    var songPath = "/audio/{{ song.path|raw }}";
+    //console.log(songPath);
+	$('#jquery_jplayer_1').jPlayer('setMedia', {
+		{{ song.codec }}: songPath
 	}).jPlayer('play');
 }
 

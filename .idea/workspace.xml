@@ -30,7 +30,7 @@
               <file leaf-file-name="StatsController.php" pinned="false" current="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/src/My/PadBundle/Controller/StatsController.php">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state line="10" column="0" selection-start="318" selection-end="318" vertical-scroll-proportion="-6.5384617">
+                    <state line="10" column="0" selection-start="318" selection-end="318" vertical-scroll-proportion="0.0">
                       <folding />
                     </state>
                   </provider>
@@ -39,16 +39,16 @@
               <file leaf-file-name="DefaultController.php" pinned="false" current="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/src/My/PadBundle/Controller/DefaultController.php">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state line="26" column="36" selection-start="615" selection-end="615" vertical-scroll-proportion="-1.9615384">
+                    <state line="26" column="36" selection-start="615" selection-end="615" vertical-scroll-proportion="0.0">
                       <folding />
                     </state>
                   </provider>
                 </entry>
               </file>
-              <file leaf-file-name="PlayController.php" pinned="false" current="true" current-in-tab="true">
+              <file leaf-file-name="PlayController.php" pinned="false" current="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/src/My/PadBundle/Controller/PlayController.php">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state line="54" column="0" selection-start="1586" selection-end="1586" vertical-scroll-proportion="0.7861635">
+                    <state line="54" column="0" selection-start="1586" selection-end="1586" vertical-scroll-proportion="0.05345912">
                       <folding />
                     </state>
                   </provider>
@@ -67,19 +67,19 @@
                   </provider>
                 </entry>
               </file>
-              <file leaf-file-name="info.html.twig" pinned="false" current="false" current-in-tab="true">
+              <file leaf-file-name="info.html.twig" pinned="false" current="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/src/My/PadBundle/Resources/views/Play/info.html.twig">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state line="37" column="61" selection-start="1559" selection-end="1559" vertical-scroll-proportion="0.03846154">
+                    <state line="37" column="61" selection-start="1559" selection-end="1559" vertical-scroll-proportion="-0.65384614">
                       <folding />
                     </state>
                   </provider>
                 </entry>
               </file>
-              <file leaf-file-name="index.html.twig" pinned="false" current="false" current-in-tab="false">
+              <file leaf-file-name="index.html.twig" pinned="false" current="true" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/src/My/PadBundle/Resources/views/Play/index.html.twig">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state line="71" column="35" selection-start="2242" selection-end="2242" vertical-scroll-proportion="0.0">
+                    <state line="132" column="12" selection-start="3646" selection-end="3646" vertical-scroll-proportion="0.28826532">
                       <folding />
                     </state>
                   </provider>
@@ -93,19 +93,10 @@
         <splitter split-orientation="vertical" split-proportion="0.57700884">
           <split-first>
             <leaf>
-              <file leaf-file-name="index.html.twig" pinned="false" current="false" current-in-tab="false">
-                <entry file="file://$PROJECT_DIR$/src/My/PadBundle/Resources/views/Play/index.html.twig">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state line="95" column="0" selection-start="2666" selection-end="2666" vertical-scroll-proportion="-0.32692307">
-                      <folding />
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-              <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
+              <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/web/css/main.css">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state line="66" column="12" selection-start="2933" selection-end="2933" vertical-scroll-proportion="0.0">
+                    <state line="66" column="12" selection-start="2933" selection-end="2933" vertical-scroll-proportion="-0.07801419">
                       <folding />
                     </state>
                   </provider>
@@ -120,10 +111,10 @@
                   </provider>
                 </entry>
               </file>
-              <file leaf-file-name="SongRepository.php" pinned="false" current="false" current-in-tab="true">
+              <file leaf-file-name="SongRepository.php" pinned="false" current="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/src/My/PadBundle/Repository/SongRepository.php">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state line="94" column="20" selection-start="2612" selection-end="2612" vertical-scroll-proportion="0.03803132">
+                    <state line="95" column="5" selection-start="2622" selection-end="2622" vertical-scroll-proportion="-1.3076923">
                       <folding />
                     </state>
                   </provider>
@@ -136,7 +127,7 @@
               <file leaf-file-name="SongRepository.php" pinned="false" current="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/src/My/PadBundle/Repository/SongRepository.php">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state line="305" column="44" selection-start="8165" selection-end="8165" vertical-scroll-proportion="-1.9615384">
+                    <state line="305" column="44" selection-start="8165" selection-end="8165" vertical-scroll-proportion="0.0">
                       <folding />
                     </state>
                   </provider>
@@ -145,7 +136,7 @@
               <file leaf-file-name="Song.php" pinned="false" current="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/src/My/PadBundle/Entity/Song.php">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-2.6070287">
+                    <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
                       <folding />
                     </state>
                   </provider>
@@ -172,7 +163,6 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/My/PadBundle/Repository/RatingRepository.php" />
         <option value="$PROJECT_DIR$/web/css/main.css" />
-        <option value="$PROJECT_DIR$/src/My/PadBundle/Resources/views/Play/index.html.twig" />
         <option value="$PROJECT_DIR$/src/My/PadBundle/Repository/ArtistRepository.php" />
         <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
         <option value="$PROJECT_DIR$/src/My/PadBundle/Resources/views/Play/info.html.twig" />
@@ -180,6 +170,7 @@
         <option value="$PROJECT_DIR$/src/My/PadBundle/Repository/SongRepository.php" />
         <option value="$PROJECT_DIR$/src/My/PadBundle/Controller/StatsController.php" />
         <option value="$PROJECT_DIR$/src/My/PadBundle/Controller/PlayController.php" />
+        <option value="$PROJECT_DIR$/src/My/PadBundle/Resources/views/Play/index.html.twig" />
       </list>
     </option>
   </component>
@@ -216,6 +207,16 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -244,7 +245,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
+              <option name="myItemId" value="web" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -258,63 +259,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
+              <option name="myItemId" value="web" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="doctrine" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mypad" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mypad" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="doctrine" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mypad" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mypad" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="doctrine" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Doctrine" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ORM" />
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -351,6 +300,96 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="PadBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mypad" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mypad" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="My" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PadBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mypad" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mypad" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="My" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PadBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Play" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mypad" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mypad" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="My" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PadBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -466,16 +505,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -483,8 +512,8 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="options.lastSelected" value="reference.webide.settings.project.settings.framework.structure" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RunManager">
     <list size="0" />
@@ -525,8 +554,8 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13138686" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Framework" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17342582" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Framework" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17502668" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -619,30 +648,14 @@
         <state line="69" column="44" selection-start="2216" selection-end="2216" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="12" selection-start="2933" selection-end="2933" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/My/PadBundle/Repository/AlbumRepository.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="143" column="0" selection-start="3822" selection-end="3822" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="143" column="0" selection-start="3822" selection-end="3822" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/My/PadBundle/Repository/ArtistRepository.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="110" column="12" selection-start="2662" selection-end="2662" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/My/PadBundle/Resources/views/Play/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="35" selection-start="2242" selection-end="2242" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -656,49 +669,61 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/My/PadBundle/Resources/views/Play/info.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="61" selection-start="1559" selection-end="1559" vertical-scroll-proportion="0.03846154">
+        <state line="37" column="61" selection-start="1559" selection-end="1559" vertical-scroll-proportion="-0.65384614">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/My/PadBundle/Controller/DefaultController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="36" selection-start="615" selection-end="615" vertical-scroll-proportion="-1.9615384">
+        <state line="26" column="36" selection-start="615" selection-end="615" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/doctrine/lib/Doctrine/ORM/EntityRepository.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="107" column="20" selection-start="3341" selection-end="3341" vertical-scroll-proportion="0.03803132">
-          <folding />
-        </state>
+        <state line="107" column="20" selection-start="3341" selection-end="3341" vertical-scroll-proportion="0.03803132" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/My/PadBundle/Controller/StatsController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="318" selection-end="318" vertical-scroll-proportion="-6.5384617">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/My/PadBundle/Repository/SongRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="94" column="20" selection-start="2612" selection-end="2612" vertical-scroll-proportion="0.03803132">
+        <state line="10" column="0" selection-start="318" selection-end="318" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/My/PadBundle/Entity/Song.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-2.6070287">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/My/PadBundle/Controller/PlayController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="0" selection-start="1586" selection-end="1586" vertical-scroll-proportion="0.7861635">
+        <state line="54" column="0" selection-start="1586" selection-end="1586" vertical-scroll-proportion="0.05345912">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/My/PadBundle/Repository/SongRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="95" column="5" selection-start="2622" selection-end="2622" vertical-scroll-proportion="-1.3076923">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="66" column="12" selection-start="2933" selection-end="2933" vertical-scroll-proportion="-0.07801419">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/My/PadBundle/Resources/views/Play/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="132" column="12" selection-start="3646" selection-end="3646" vertical-scroll-proportion="0.28826532">
           <folding />
         </state>
       </provider>
