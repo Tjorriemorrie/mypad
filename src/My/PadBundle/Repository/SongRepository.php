@@ -124,7 +124,9 @@ class SongRepository extends EntityRepository
 	}
 
 
-	/** Scan */
+	/**
+	 * Scan
+	 */
 	public function scan($dir)
 	{
 		static $added = 0;
@@ -152,7 +154,7 @@ class SongRepository extends EntityRepository
 				if (strpos($pathInfo['dirname'], '/') === 0) $pathInfo['dirname'] = substr($pathInfo['dirname'], 1);
 				//die(var_dump($pathInfo));
 
-				if (in_array(strtolower($pathInfo['extension']), array('mp3', 'wav', 'm4a'))) {
+				if (in_array(strtolower($pathInfo['extension']), array('mp3', 'wav', 'm4a', 'wma'))) {
 					$song = $this->add($pathInfo);
 					if ($song) $added++;
 

@@ -42,6 +42,7 @@ class DefaultController extends Controller
      */
     public function scanAction($dir)
     {
+	    set_time_limit(0);
 		$em = $this->getDoctrine()->getEntityManager();
 		$added = $em->getRepository('MyPadBundle:Song')->scan($dir);
 		$em->flush();
