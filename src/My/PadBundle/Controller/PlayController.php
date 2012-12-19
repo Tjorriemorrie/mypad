@@ -28,6 +28,12 @@ class PlayController extends Controller
 	    $session = $this->get('session');
      	$session->set('inplay', $song->getId());
 
+        // bad-play threshold
+        // end song as if played
+        if ($song->getRating() < 0.50) {
+            return $this->redirect($this->generateUrl('postplay'));
+        }
+
      	return array('song' => $song);
     }
 

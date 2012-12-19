@@ -284,6 +284,8 @@ class Song
 	public function renameFile()
 	{
 		$reservedCharacters = array('/', '\\', '?', '%', '*', ':', '|', '"', '<', '>', '.');
+        // add non-working
+        $reservedCharacters[] = '#';
 
 		// TITLE
 		if (is_null($this->getTitle())) {

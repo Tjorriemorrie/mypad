@@ -291,6 +291,7 @@ class SongRepository extends EntityRepository
 	 */
 	public function getRandomPrioritised()
 	{
+        $badPlayThreshold = 0.00;
 		$playedAtAvg = $this->getAveragePlayedAt();
 		$countSongs = $this->getSize(true);
 		if (!$countSongs) return null;
@@ -304,6 +305,7 @@ class SongRepository extends EntityRepository
 //				die('calc < min at ' . $priorityCutoff);
 //			}
 			$priorityCutoff -= $decrement;
+            $badPlayThreshold -= $decrement;
 
 			$playedAtAvg->modify('+1 minute');
 
@@ -313,7 +315,9 @@ class SongRepository extends EntityRepository
 				->setMaxResults(1)
 				->getQuery()
 				->getSingleResult();
-		} while ($song->getPriority() < $priorityCutoff || $song->getPlayedAt() > $playedAtAvg);
+		} while ($song->getPriority() < $priorityCutoff ||
+                 $song->getPlayedAt() > $playedAtAvg ||
+                 $song->getRating() < $badPlayThreshold);
 		//die(var_dump($priorityCutoff));
 		//die('song : ' . $song->getPriority());
 
