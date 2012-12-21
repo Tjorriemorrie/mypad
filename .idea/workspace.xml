@@ -48,7 +48,7 @@
               <file leaf-file-name="DefaultController.php" pinned="false" current="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/src/My/PadBundle/Controller/DefaultController.php">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state line="44" column="26" selection-start="1240" selection-end="1240" vertical-scroll-proportion="-0.65384614">
+                    <state line="44" column="26" selection-start="1240" selection-end="1240" vertical-scroll-proportion="0.0">
                       <folding />
                     </state>
                   </provider>
@@ -115,10 +115,19 @@
           </split-first>
           <split-second>
             <leaf>
-              <file leaf-file-name="SongRepository.php" pinned="false" current="true" current-in-tab="true">
+              <file leaf-file-name="SongRepository.php" pinned="false" current="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/src/My/PadBundle/Repository/SongRepository.php">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state line="294" column="0" selection-start="7765" selection-end="7765" vertical-scroll-proportion="-0.5207668">
+                    <state line="298" column="0" selection-start="7917" selection-end="7917" vertical-scroll-proportion="0.0">
+                      <folding />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file leaf-file-name="RatingRepository.php" pinned="false" current="true" current-in-tab="true">
+                <entry file="file://$PROJECT_DIR$/src/My/PadBundle/Repository/RatingRepository.php">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state line="40" column="71" selection-start="1148" selection-end="1148" vertical-scroll-proportion="0.05214724">
                       <folding />
                     </state>
                   </provider>
@@ -127,7 +136,7 @@
               <file leaf-file-name="Song.php" pinned="false" current="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/src/My/PadBundle/Entity/Song.php">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="43.153847">
+                    <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
                       <folding />
                     </state>
                   </provider>
@@ -152,7 +161,6 @@
       <list>
         <option value="$PROJECT_DIR$/app/config/parameters.ini" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/src/My/PadBundle/Repository/RatingRepository.php" />
         <option value="$PROJECT_DIR$/web/css/main.css" />
         <option value="$PROJECT_DIR$/src/My/PadBundle/Repository/ArtistRepository.php" />
         <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
@@ -163,6 +171,7 @@
         <option value="$PROJECT_DIR$/src/My/PadBundle/Entity/Song.php" />
         <option value="$PROJECT_DIR$/src/My/PadBundle/Controller/PlayController.php" />
         <option value="$PROJECT_DIR$/src/My/PadBundle/Repository/SongRepository.php" />
+        <option value="$PROJECT_DIR$/src/My/PadBundle/Repository/RatingRepository.php" />
       </list>
     </option>
   </component>
@@ -205,8 +214,8 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="options.lastSelected" value="preferences.sourceCode.General" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RunManager">
     <list size="0" />
@@ -336,11 +345,6 @@
         <state line="6" column="9" selection-start="77" selection-end="77" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/My/PadBundle/Repository/RatingRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="44" selection-start="2216" selection-end="2216" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/My/PadBundle/Repository/AlbumRepository.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="143" column="0" selection-start="3822" selection-end="3822" vertical-scroll-proportion="0.0" />
@@ -388,7 +392,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/My/PadBundle/Controller/DefaultController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="26" selection-start="1240" selection-end="1240" vertical-scroll-proportion="-0.65384614">
+        <state line="44" column="26" selection-start="1240" selection-end="1240" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -402,7 +406,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/My/PadBundle/Entity/Song.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="43.153847">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -416,7 +420,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/My/PadBundle/Repository/SongRepository.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="294" column="0" selection-start="7765" selection-end="7765" vertical-scroll-proportion="-0.5207668">
+        <state line="298" column="0" selection-start="7917" selection-end="7917" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/My/PadBundle/Repository/RatingRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="71" selection-start="1148" selection-end="1148" vertical-scroll-proportion="0.05214724">
           <folding />
         </state>
       </provider>
