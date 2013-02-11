@@ -3,6 +3,7 @@
 namespace My\PadBundle\Repository;
 
 use Doctrine\ORM\EntityRepository;
+use My\PadBundle\Entity\Song;
 
 /**
  * SongRepository
@@ -260,13 +261,14 @@ class SongRepository extends EntityRepository
 
 	/**
 	 * Get Last Played At
+     * Get song that was played the longest ago
 	 */
 	public function getLastPlayedAt()
 	{
 		$qb = $this->getEntityManager()->createQueryBuilder();
 		return $qb->select('s.playedAt')->from('\My\PadBundle\Entity\Song', 's')
 			->where('s.playedAt IS NOT NULL')
-			->orderBy('s.playedAt', 'DESC')
+			->orderBy('s.playedAt', 'ASC')
 			->setMaxResults(1)
 			->getQuery()
 			->getSingleResult();
@@ -291,23 +293,21 @@ class SongRepository extends EntityRepository
 	 */
 	public function getRandomPrioritised()
 	{
-        $badPlayThreshold = 0.00;
-		$playedAtAvg = $this->getAveragePlayedAt();
 		$countSongs = $this->getSize(true);
 		if (!$countSongs) return null;
-		$decrementMin = 1 / $countSongs;
 
-		$priorityCutoff = 1;
+        $lastPlayedAt = $this->getLastPlayedAt();
+        $lastPlayedAt = new \DateTime($lastPlayedAt['playedAt']);
+        $diff = time() - $lastPlayedAt->getTimestamp();
+        $timeIncrement = max(1, $diff / $countSongs);
+        //$timeIncrement = min(60 * 60 * 24 * 30 / $countSongs, $timeIncrement);
+
+        $priorityCutoff = 1;
+		$priorityDecrement = $priorityCutoff / $countSongs;
+
 		do {
-			$decrementCalc = $priorityCutoff * 0.001;
-			$decrement = max($decrementMin, $decrementCalc);
-//			if ($decrementCalc < $decrementMin) {
-//				die('calc < min at ' . $priorityCutoff);
-//			}
-			$priorityCutoff -= $decrement;
-            $badPlayThreshold -= $decrement;
-
-			$playedAtAvg->modify('+1 minute');
+			$priorityCutoff -= $priorityDecrement;
+            $lastPlayedAt->modify('+' . round($timeIncrement) . ' seconds');
 
 			$qb = $this->getEntityManager()->createQueryBuilder();
 			$song = $qb->select('s')->from('MyPadBundle:Song', 's')
@@ -316,11 +316,9 @@ class SongRepository extends EntityRepository
 				->getQuery()
 				->getSingleResult();
 		} while ($song->getPriority() < $priorityCutoff ||
-                 $song->getPlayedAt() > $playedAtAvg ||
-                 $song->getRating() < $badPlayThreshold);
-		//die(var_dump($priorityCutoff));
-		//die('song : ' . $song->getPriority());
+                 $song->getPlayedAt() > $lastPlayedAt);
 
+//        die(var_dump($lastPlayedAt));
 		return $song;
 	}
 
@@ -364,6 +362,37 @@ class SongRepository extends EntityRepository
 		return new \Datetime(date('Y-m-d H:i:s', round($timestamp)));
 	}
 
+    /**
+     * Get last rated at
+     * @return Song
+     */
+    public function getLastRatedAt()
+    {
+        $query = $this->getEntityManager()->createQuery("
+            SELECT s
+            FROM MyPadBundle:Song s
+            WHERE s.ratedAt IS NOT NULL
+            ORDER BY s.ratedAt ASC
+        ")->setMaxResults(1);
+
+        return $query->getSingleResult();
+    }
+
+    /**
+     * Get highest rated
+     * @return Song
+     */
+    public function getHighestRated()
+    {
+        $query = $this->getEntityManager()->createQuery("
+            SELECT s
+            FROM MyPadBundle:Song s
+            WHERE s.rated IS NOT NULL
+            ORDER BY s.rated DESC
+        ")->setMaxResults(1);
+
+        return $query->getSingleResult();
+    }
 
 	/**
 	 * Get Average Rated Count of all songs

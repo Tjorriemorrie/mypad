@@ -39,22 +39,26 @@ class RatingRepository extends EntityRepository
 	public function getSongsToRate($current)
 	{
 		if ($current->getRated() >= max(5, $current->getPlaycount() * 3)) return null;
-
-		$avgRatedAt = $this->getEntityManager()->getRepository('MyPadBundle:Song')->getAverageRatedAt();
 		$countSongs = $this->getEntityManager()->getRepository('MyPadBundle:Song')->getSize(true);
-		$avgRated = $this->getEntityManager()->getRepository('MyPadBundle:Song')->getAverageRatedCount();
 
-		$daysOut = $avgRatedAt->diff(new \DateTime())->days;
-		$avgRatedAt->modify('-' . ceil($daysOut / 2) . ' days');
-		$avgRated /= 2;
+		//$avgRated = $this->getEntityManager()->getRepository('MyPadBundle:Song')->getHighestRated();
+        $highestRatedSong = $this->getEntityManager()->getRepository('MyPadBundle:Song')->getHighestRated();
+        $highestRated = max(1, $highestRatedSong->getRated());
+        $ratedDecrement = $highestRated / $countSongs;
+
+		//$avgRatedAt = $this->getEntityManager()->getRepository('MyPadBundle:Song')->getAverageRatedAt();
+		$lastRatedAtSong = $this->getEntityManager()->getRepository('MyPadBundle:Song')->getLastRatedAt();
+        $lastRatedAt = $lastRatedAtSong->getRatedAt();
+        $diff = time() - $lastRatedAt->getTimestamp();
+        $timeIncrement = max(1, $diff / $countSongs);
 
 		$failCount = 0;
 		do {
 			$failCount++;
 			if ($failCount > $countSongs) return;
 
-			$avgRatedAt->modify('+1 minute');
-			$avgRated += $avgRated / $daysOut * 24 * 60;
+			$lastRatedAt->modify('+' . round($timeIncrement) . ' seconds');
+			$highestRated -= $ratedDecrement;
 
 			$qb = $this->getEntityManager()->createQueryBuilder();
 			$song = $qb->select('s')->from('MyPadBundle:Song', 's')
@@ -66,8 +70,8 @@ class RatingRepository extends EntityRepository
 			$song->getPlaycount() < 1 or
 			is_null($song->getTitle()) or
 			is_null($song->getArtist()) or
-			$song->getRatedAt() > $avgRatedAt or
-			$song->getRated() > $avgRated or
+			$song->getRatedAt() > $lastRatedAt or
+			$song->getRated() > $highestRated or
 			$this->hasCompeted($current, $song)
 		);
 

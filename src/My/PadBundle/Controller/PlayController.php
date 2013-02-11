@@ -30,9 +30,11 @@ class PlayController extends Controller
 
         // bad-play threshold
         // end song as if played
-        if ($song->getRating() < 0.50) {
-            return $this->redirect($this->generateUrl('postplay'));
-        }
+//        if ($song->getRating() <= 0.40 && $song->getPlaycount() >= 1 ||
+//            $song->getRating() <= 0.60 && $song->getPlaycount() >= 2 ||
+//            $song->getRating() <= 0.67 && $song->getPlaycount() >= 3) {
+//            return $this->redirect($this->generateUrl('postplay'));
+//        }
 
      	return array('song' => $song);
     }

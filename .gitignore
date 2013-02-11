@@ -11,4 +11,11 @@ web/bundles/*
 # Configuration files
 app/config/parameters.ini
 
+# mp3 files
 web/audio
+
+# sass
+.sass-cache
+
+#phpstorm
+.idea

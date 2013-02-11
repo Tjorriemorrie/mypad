@@ -153,7 +153,7 @@ class Song
 	/** Update Priority */
 	public function updatePriority($maxPlaycount)
 	{
-		if ($this->getPlaycount() == 0) {
+		if ($this->getPlaycount() == 0 || is_null($this->getTitle()) || is_null($this->getArtist())) {
 			$this->setPriority(1);
 		} else {
 			$playcountWeighed = $this->getPlaycount() / $maxPlaycount;
@@ -161,11 +161,8 @@ class Song
 			$rating = $this->getRating();
 			if (is_null($rating)) $rating = 0;
 
-			//$rating /= 1.5;
-			//$rating = sqrt($rating);
-			//$playcountWeighed *= 1.5;
-			//$playcountWeighed = sqrt($playcountWeighed);
-			$this->setPriority($rating - $playcountWeighed);
+            $priority = abs($rating * 3 / 4) - abs($playcountWeighed * 1 / 4);
+			$this->setPriority($priority);
 		}
 	}
 

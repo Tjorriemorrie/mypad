@@ -8,7 +8,8 @@
 <h6 class="subtitle">Played {{ song.playcount }} times</h6>
 <br>
 <h6 class="subtitle">
-	{{ song.displayPriority|raw }} priority	
+	{{ song.displayPriority|raw }} priority
+    <br/>Played last on {{ song.playedAt ? song.playedAt|date('j M Y') : '-' }}
 </h6>
 
 
