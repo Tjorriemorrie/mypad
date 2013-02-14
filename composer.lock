@@ -1,5 +1,5 @@
 {
-    "hash": "d0a3dfba61e9806d3e437fe7e0016722",
+    "hash": "3d85c75c1dc7263e9356b3b215442660",
     "packages": [
         {
             "name": "doctrine/common",
@@ -646,6 +646,54 @@
             ]
         },
         {
+            "name": "kriswallsmith/buzz",
+            "version": "dev-travis",
+            "source": {
+                "type": "git",
+                "url": "http://github.com/kriswallsmith/Buzz.git",
+                "reference": "d6f6851ce8da88453dca5a0d4210118c9b2197a1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kriswallsmith/Buzz/zipball/d6f6851ce8da88453dca5a0d4210118c9b2197a1",
+                "reference": "d6f6851ce8da88453dca5a0d4210118c9b2197a1",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "3.7.*"
+            },
+            "suggest": {
+                "ext-curl": "*"
+            },
+            "time": "2013-01-16 04:36:44",
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Buzz": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kris Wallsmith",
+                    "email": "kris.wallsmith@gmail.com",
+                    "homepage": "http://kriswallsmith.net/"
+                }
+            ],
+            "description": "Lightweight HTTP client",
+            "homepage": "https://github.com/kriswallsmith/Buzz",
+            "keywords": [
+                "curl",
+                "http client"
+            ]
+        },
+        {
             "name": "monolog/monolog",
             "version": "1.2.1",
             "source": {
@@ -1260,6 +1308,7 @@
     "minimum-stability": "stable",
     "stability-flags": {
         "twig/extensions": 20,
-        "kriswallsmith/assetic": 20
+        "kriswallsmith/assetic": 20,
+        "kriswallsmith/buzz": 20
     }
 }

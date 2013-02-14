@@ -3,6 +3,8 @@
 namespace My\PadBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use My\PadBundle\Entity\Artist;
+use My\PadBundle\Entity\Album;
 
 /**
  * @ORM\Entity(repositoryClass="My\PadBundle\Repository\SongRepository")
@@ -658,7 +660,7 @@ class Song
     /**
      * Get artist
      *
-     * @return My\PadBundle\Entity\Artist
+     * @return Artist
      */
     public function getArtist()
     {
@@ -678,7 +680,7 @@ class Song
     /**
      * Get album
      *
-     * @return My\PadBundle\Entity\Album
+     * @return Album
      */
     public function getAlbum()
     {

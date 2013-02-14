@@ -2,6 +2,9 @@
 
 namespace My\PadBundle\Entity;
 
+use Buzz\Browser;
+use Buzz\Message\Response;
+
 /**
  * Last.fm API Model
  */
@@ -72,15 +75,23 @@ class Lastfm
 
 	/**
 	 * Generates Signature for POST
+     * @return string
 	 */
-	private function generateSignature($postVars)
+	protected  function generateSignature(&$postVars)
 	{
-		$str = '';
-		foreach ($postVars as $key => $value) {
-			$str .= $key . $value;
-		}
-		$str .= $this->api_secret;
-		return md5($str);
+        ksort($postVars);
+        //die(var_dump($postVars));
+
+		//$string = http_build_query($postVars);
+        $string = '';
+        foreach ($postVars as $key => $value) {
+            $string .= $key . $value;
+        }
+
+		$string .= $this->api_secret;
+        //die(var_dump($string));
+
+		return md5($string);
 	}
 
 
@@ -90,166 +101,133 @@ class Lastfm
 
 	/**
 	 * Update Now Playing
+     * @return result[]
 	 */
-	public function updateNowPlaying($s, $song)
+	public function updateNowPlaying($s, Song $song)
 	{
 		//die(var_dump($s));
 		//die(var_dump($song));
-		if (is_null($song->getTitle()) || is_null($song->getArtist())) return array('result'=>'fail', 'msg'=>'No artist or track');
+		if (is_null($song->getTitle()) || is_null($song->getArtist())) {
+            return array('result'=>'fail', 'msg'=>'No artist or track');
+        }
 
-		$sig = '';
-		$client = new \Zend_Http_Client();
-		$client->setUri($this->api_host);
-//		if (!is_null($song->getAlbum()))
-//			$client->setParameterPost('album',	$song->getAlbum()->getTitle());		$sig .= 'album' . $song->getAlbum()->getTitle();
-		$client->setParameterPost('api_key',	$this->api_key);					$sig .= 'api_key' . $this->api_key;
-		$client->setParameterPost('artist',		$song->getArtist()->getName());		$sig .= 'artist' . $song->getArtist()->getName();
-		$client->setParameterPost('method',		'track.updateNowPlaying');			$sig .= 'method' . 'track.updateNowPlaying';
-		$client->setParameterPost('sk',			(string)$s);						$sig .= 'sk' . (string)$s;
-		$client->setParameterPost('track',		$song->getTitle());					$sig .= 'track' . $song->getTitle();
-//		if (!is_null($song->getTrack()))
-//			$client->setParameterPost('trackNumber', $song->getTrack());			$sig .= 'trackNumber' . $song->getTrack();
-		$client->setParameterPost('api_sig',	md5($sig . $this->api_secret));
-		$client->setMethod(\Zend_Http_Client::POST);
-		$client->setConfig(array(
-    		'maxredirects'	=> 0,
-    		'timeout'		=> 10,
-		));
+        $postFields = array(
+            'api_key' => $this->api_key,
+            'sk' => (string)$s,
+            'method' => 'track.updateNowPlaying',
+            'artist' => $song->getArtist()->getName(),
+            'track' => $song->getTitle(),
+        );
+		if (!is_null($song->getAlbum())) {
+            $postFields['album'] = $song->getAlbum()->getTitle();
+        }
+		if (!is_null($song->getTrack())) {
+			$postFields['trackNumber'] = $song->getTrack();
+        }
+		$postFields['api_sig'] = $this->generateSignature($postFields);
+        //die(var_dump($postFields));
 
+        $postData = http_build_query($postFields);
+        //die(var_dump($postData));
 
-		for ($i=1; $i<=12; $i++) {
-			try {
-				$response = $client->request();
-				if (!$response->isSuccessful()) return array('result'=>'fail', 'msg'=>$i . ': ' . $response->getBody(), 'sk'=>$s);
-				$xml = new \SimpleXMLElement($response->getBody());
+        /** @var $response Response */
+        $buzz = new Browser();
+        $response = $buzz->post($this->api_host, array(), $postData);
 
-				$attributes = $xml->attributes();
-				if ((string)$attributes['status'] !== 'ok') return array('result'=>'fail', 'msg'=>$i . ': ' . (string)$xml->error, 'sk'=>$s);
-				else return array('result'=>'win', 'msg'=>'Now Playing Updated');//$xml);
-			} catch (Exception $e) {
-				$result = array('result'=>'fail', 'msg'=>$i . ': ' . $e->getMessage(), 'sk'=>$s);
-			}
-		}
-
-		return $result;
+        $xml = new \SimpleXMLElement($response->getContent());
+        //die(var_dump($xml));
+        if ((string)$xml->attributes()->{'status'} !== 'ok') {
+            return array('result' => 'fail', 'msg' => trim((string)$xml->{'error'}), 'sk'=>$s);
+        } else {
+            return array('result' => 'win', 'msg' => 'Now Playing Updated');
+        }
 	}
-
-//	public function updateNowPlayingNew($s, $song)
-//	{
-//		if (is_null($song->getTitle()) || is_null($song->getArtist())) return array('result'=>'fail', 'msg'=>'No artist or track');
-//
-//		$postVars = array();
-//		//if (!is_null($song->getAlbum())) $params['album'] = urlencode($song->album->title);
-//		$postVars['api_key']	= $this->api_key;
-//		$postVars['artist']		= $song->getArtist()->getName();
-//		$postVars['method']		= 'track.updateNowPlaying';
-//		$postVars['sk']			= $s;
-//		$postVars['track']		= $song->getTitle();
-//		//if (!is_null($song->track)) $params['trackNumber'] = urlencode($song->track);
-//		$postVars['api_sig']	= $this->generateSignature($postVars);
-//		die(var_dump($postVars));
-//
-//		$ch = curl_init($this->api_host);
-//		curl_setopt($ch, CURLOPT_POST, 1);
-//		curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($postVars));
-//		curl_setopt($ch, CURLOPT_HEADER, 0);
-//		curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-//		curl_setopt($ch, CURLOPT_TIMEOUT, 10);
-//		$response = curl_exec($ch);
-//		//die(var_dump($response));
-//
-//		$xml = new \SimpleXMLElement($response);
-//		$attributes = $xml->attributes();
-//		if ((string)$attributes['status'] !== 'ok') return array('result'=>'fail', 'msg'=>(string)$xml->error);
-//		return array('result'=>'win', 'msg'=>$xml);
-//	}
-
 
 	/**
 	 * Scrobbles Track
 	 */
-	public function scrobble($s, $song)
+	public function scrobble($s, Song $song)
 	{
-		if (is_null($song->getTitle()) || is_null($song->getArtist())) return array('result'=>'fail', 'msg'=>'No artist or track');
+		if (is_null($song->getTitle()) || is_null($song->getArtist())) {
+            return array('result'=>'fail', 'msg'=>'No artist or track');
+        }
 
-		$sig = '';
-		$client = new \Zend_Http_Client();
-		$client->setUri($this->api_host);
-		//if (!is_null($song->getAlbum())) $client->setParameterPost('album', $song->getAlbum()->getTitle());		$sig .= 'album' . $song->getAlbum()->getTitle();
-		$client->setParameterPost('api_key',	$this->api_key);					$sig .= 'api_key' . $this->api_key;
-		$client->setParameterPost('artist',		$song->getArtist()->getName());		$sig .= 'artist' . $song->getArtist()->getName();
-		$client->setParameterPost('method',		'track.scrobble');					$sig .= 'method' . 'track.scrobble';
-		$client->setParameterPost('sk',			$s);								$sig .= 'sk' . $s;
-		$client->setParameterPost('timestamp',	gmdate(strtotime('-5 seconds')));	$sig .= 'timestamp' . gmdate(strtotime('-5 second'));
-		$client->setParameterPost('track',		$song->getTitle());					$sig .= 'track' . $song->getTitle();
-		//if (!is_null($song->getTrack())) $client->setParameterPost('trackNumber', $song->getTrack());			$sig .= 'trackNumber' . $song->getTrack();
-		$client->setParameterPost('api_sig',	md5($sig . $this->api_secret));
-		$client->setMethod(\Zend_Http_Client::POST);
-		$client->setConfig(array(
-    		'maxredirects'	=> 0,
-    		'timeout'		=> 10,
-		));
+        $postFields = array(
+            'api_key' => $this->api_key,
+            'sk' => (string)$s,
+            'method' => 'track.scrobble',
+            'artist' => $song->getArtist()->getName(),
+            'track' => $song->getTitle(),
+            'timestamp' => gmdate(strtotime('-35 second')),
+        );
+        if (!is_null($song->getAlbum())) {
+            $postFields['album'] = $song->getAlbum()->getTitle();
+        }
+        if (!is_null($song->getTrack())) {
+            $postFields['trackNumber'] = $song->getTrack();
+        }
+        $postFields['api_sig'] = $this->generateSignature($postFields);
+        //die(var_dump($postFields));
 
-		for ($i=1; $i<=12; $i++) {
-			try {
-				$response = $client->request();
-				if (!$response->isSuccessful()) return array('result'=>'fail', 'msg'=>$i . ': ' . $response->getBody());
-				$xml = new \SimpleXMLElement($response->getBody());
+        $postData = http_build_query($postFields);
+        //die(var_dump($postData));
 
-				$attributes = $xml->attributes();
-				if ((string)$attributes['status'] !== 'ok') return array('result'=>'fail', 'msg'=>$i . ': ' . (string)$xml->error);
-				else return array('result'=>'win', 'msg'=>'+1');//Result: ' . var_dump($xml));
-			} catch (Exception $e) {
-				$result = array('result'=>'fail', 'msg'=>$i . ': ' . $e->getMessage());
-			}
-		}
+        /** @var $response Response */
+        $buzz = new Browser();
+        $response = $buzz->post($this->api_host, array(), $postData);
 
-		return $result;
+        $xml = new \SimpleXMLElement($response->getContent());
+        //die(var_dump($xml));
+        if ((string)$xml->attributes()->{'status'} !== 'ok') {
+            return array('result' => 'fail', 'msg' => trim((string)$xml->{'error'}), 'sk'=>$s);
+        } else {
+            return array('result' => 'win', 'msg' => '+1');
+        }
 	}
-
 
 	/**
 	 * (Un)Love Track
 	 */
-	public function setLove($s, $song)
+	public function setLove($s, Song $song)
 	{
-		if (is_null($song->getTitle()) || is_null($song->getArtist())) return array('result'=>'fail', 'msg'=>'');//No artist or track');
-		if (is_null($song->getRating()) || $song->getRated() < 5) return array('result'=>'fail', 'msg'=>'');
-		if ($song->getRating() >= 0.90) $method = 'track.love';
-		else $method = 'track.unlove';
+		if (is_null($song->getTitle()) || is_null($song->getArtist())) {
+            return array('result'=>'fail', 'msg'=>'');
+        }
+		if (is_null($song->getRating()) || $song->getRated() < 5) {
+            return array('result'=>'fail', 'msg'=>'');
+        }
 
-		$sig = '';
-		$client = new \Zend_Http_Client();
-		$client->setUri($this->api_host);
-		$client->setParameterPost('api_key',	$this->api_key);					$sig .= 'api_key' . $this->api_key;
-		$client->setParameterPost('artist',		$song->getArtist()->getName());		$sig .= 'artist' . $song->getArtist()->getName();
-		$client->setParameterPost('method',		$method);							$sig .= 'method' . $method;
-		$client->setParameterPost('sk',			$s);								$sig .= 'sk' . $s;
-		$client->setParameterPost('track',		$song->getTitle());					$sig .= 'track' . $song->getTitle();
-		$client->setParameterPost('api_sig',	md5($sig . $this->api_secret));
-		$client->setMethod(\Zend_Http_Client::POST);
-		$client->setConfig(array(
-    		'maxredirects'	=> 0,
-    		'timeout'		=> 10,
-		));
-		//if (!is_null($song->album)) $params['album'] = urlencode($song->album->title);
-		//if (!is_null($song->track)) $params['trackNumber'] = urlencode($song->track);
+		if ($song->getRating() >= 0.90) {
+            $method = 'track.love';
+        } else {
+            $method = 'track.unlove';
+        }
 
-		for ($i=1; $i<=12; $i++) {
-			try {
-				$response = $client->request();
-				if (!$response->isSuccessful()) return array('result'=>'fail', 'msg'=>$i . ': ' . $response->getBody());
-				$xml = new \SimpleXMLElement($response->getBody());
+        $postFields = array(
+            'api_key' => $this->api_key,
+            'sk' => (string)$s,
+            'method' => $method,
+            'artist' => $song->getArtist()->getName(),
+            'track' => $song->getTitle(),
+        );
 
-				$attributes = $xml->attributes();
-				if ((string)$attributes['status'] !== 'ok') return array('result'=>'fail', 'msg'=>$i . ': ' . (string)$xml->error);
-				else return array('result'=>'win', 'msg'=>(($song->getRating() >= 0.90) ? '<3' : ''));//$xml);
-			} catch (Exception $e) {
-				$result = array('result'=>'fail', 'msg'=>$i . ': ' . $e->getMessage());
-			}
-		}
+        $postFields['api_sig'] = $this->generateSignature($postFields);
+        //die(var_dump($postFields));
 
-		return $result;
+        $postData = http_build_query($postFields);
+        //die(var_dump($postData));
+
+        /** @var $response Response */
+        $buzz = new Browser();
+        $response = $buzz->post($this->api_host, array(), $postData);
+
+        $xml = new \SimpleXMLElement($response->getContent());
+        if ((string)$xml->attributes()->{'status'} !== 'ok') {
+            //die(var_dump($xml));
+            return array('result' => 'fail', 'msg' => trim((string)$xml->{'error'}), 'sk'=>$s);
+        } else {
+            return array('result' => 'win', 'msg' => $song->getRating() >= 0.90 ? '<3' : '');
+        }
 	}
 
 

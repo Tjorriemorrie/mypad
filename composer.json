@@ -19,7 +19,7 @@
         "jms/security-extra-bundle": "1.2.*",
         "jms/di-extra-bundle": "1.1.*",
         "kriswallsmith/assetic": "1.1.*@dev",
-        "zendframework/zendframework1": "dev-release-1.12"
+        "kriswallsmith/buzz": "dev-travis"
     },
     "scripts": {
         "post-install-cmd": [

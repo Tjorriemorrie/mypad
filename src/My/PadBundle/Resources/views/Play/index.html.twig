@@ -159,26 +159,26 @@ function setInfo()
 	$('#info').load('{{ path('info') }}');
 
 	// update now playing
-	//$('#lastfmMsg').load('{{ path('lastfm_nowplaying') }}');
+	$('#lastfmMsg').load('{{ path('lastfm_nowplaying') }}');
 
 	// update fav song
-	//$('#lastfmFav').load('{{ path('lastfm_favsong') }}');
+	$('#lastfmFav').load('{{ path('lastfm_favsong') }}');
 }
 
 
 function loadNextSong()
 {
 	// scrobble
-	//document.title = 'scrobbling';
-	//$('.jp-title ul').append('<li>Scrobbling...</li>');
-	//$.get('/lastfm/scrobble', function(data)
-	//{
+	document.title = 'scrobbling';
+	$('.jp-title ul').append('<li>Scrobbling...</li>');
+	$.get('/lastfm/scrobble', function(data)
+	{
 		document.title = 'loading';
-		//$('.jp-title ul').append('<li>' + data + '</li>');
+		$('.jp-title ul').append('<li>' + data + '</li>');
 
 		// load next
 		$('.jp-title ul').append('<li>Loading next song...</li>');
 		$('#middle').load('{{ path('postplay') }}');
-	//});
+	});
 }
 </script>
