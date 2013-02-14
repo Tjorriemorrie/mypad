@@ -297,7 +297,8 @@ class SongRepository extends EntityRepository
 		if (!$countSongs) return null;
 
         $lastPlayedAt = $this->getLastPlayedAt();
-        $lastPlayedAt = new \DateTime($lastPlayedAt['playedAt']);
+        $lastPlayedAt = $lastPlayedAt['playedAt'];
+        //die(var_dump($lastPlayedAt));
         $diff = time() - $lastPlayedAt->getTimestamp();
         $timeIncrement = max(1, $diff / $countSongs);
         //$timeIncrement = min(60 * 60 * 24 * 30 / $countSongs, $timeIncrement);

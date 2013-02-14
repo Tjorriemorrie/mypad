@@ -30,7 +30,7 @@ class Song
 	/** @ORM\Column(type="string", length=255, unique=true) */
 	private $path;
 
-	/** @ORM\Column(type="string", length="3") */
+	/** @ORM\Column(type="string", length=3) */
 	private $codec;
 
 	/** @ORM\Column(type="smallint") */
