@@ -163,7 +163,8 @@ class Song
 			$rating = $this->getRating();
 			if (is_null($rating)) $rating = 0;
 
-            $priority = abs($rating * 3 / 4) - abs($playcountWeighed * 1 / 4);
+            //$priority = abs($rating * 3 / 4) - abs($playcountWeighed * 1 / 4);
+            $priority = abs($rating * 3/6) - abs($playcountWeighed * 1/6) - abs((1 - $rating) * 2/6);
 			$this->setPriority($priority);
 		}
 	}
