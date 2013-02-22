@@ -57,8 +57,8 @@ class RatingRepository extends EntityRepository
 			$failCount++;
 			if ($failCount > $countSongs) return;
 
-			$lastRatedAt->modify('+' . round($timeIncrement) . ' seconds');
-			$highestRated -= $ratedDecrement;
+			$lastRatedAt->modify('+' . round($timeIncrement) * 5 . ' seconds');
+			$highestRated -= $ratedDecrement * 5;
 
 			$qb = $this->getEntityManager()->createQueryBuilder();
 			$song = $qb->select('s')->from('MyPadBundle:Song', 's')
