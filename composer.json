@@ -19,7 +19,7 @@
         "jms/security-extra-bundle": "1.2.*",
         "jms/di-extra-bundle": "1.1.*",
         "kriswallsmith/assetic": "1.1.*@dev",
-        "kriswallsmith/buzz": "dev-travis"
+        "kriswallsmith/buzz": "*@dev"
     },
     "scripts": {
         "post-install-cmd": [
