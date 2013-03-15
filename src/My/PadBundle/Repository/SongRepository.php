@@ -110,10 +110,17 @@ class SongRepository extends EntityRepository
 	/** Add new */
 	public function add($pathInfo)
 	{
-		//die(var_dump($pathInfo));
 		$path = implode('/', array($pathInfo['dirname'], $pathInfo['basename']));
-		$songExists = $this->findOneByPath($path);
-		if ($songExists) return false;
+        try {
+		    $songExists = $this->findOneByPath($path);
+        } catch (\Exception $e) {
+            echo '<p>rename this song:</p>';
+            die(var_dump($pathInfo));
+        }
+		if ($songExists) {
+            return false;
+        }
+		//die(var_dump($pathInfo));
 
 		$em = $this->getEntityManager();
 		$song = new \My\PadBundle\Entity\Song();
