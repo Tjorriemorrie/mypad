@@ -737,4 +737,50 @@ class Song
     {
         $this->winners[] = $winners;
     }
+
+    /**
+     * Add winners
+     *
+     * @param \My\PadBundle\Entity\Rating $winners
+     * @return Song
+     */
+    public function addWinner(\My\PadBundle\Entity\Rating $winners)
+    {
+        $this->winners[] = $winners;
+    
+        return $this;
+    }
+
+    /**
+     * Remove winners
+     *
+     * @param \My\PadBundle\Entity\Rating $winners
+     */
+    public function removeWinner(\My\PadBundle\Entity\Rating $winners)
+    {
+        $this->winners->removeElement($winners);
+    }
+
+    /**
+     * Add losers
+     *
+     * @param \My\PadBundle\Entity\Rating $losers
+     * @return Song
+     */
+    public function addLoser(\My\PadBundle\Entity\Rating $losers)
+    {
+        $this->losers[] = $losers;
+    
+        return $this;
+    }
+
+    /**
+     * Remove losers
+     *
+     * @param \My\PadBundle\Entity\Rating $losers
+     */
+    public function removeLoser(\My\PadBundle\Entity\Rating $losers)
+    {
+        $this->losers->removeElement($losers);
+    }
 }

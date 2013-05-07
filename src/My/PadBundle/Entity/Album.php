@@ -293,4 +293,14 @@ class Album
     {
         return $this->songs;
     }
+
+    /**
+     * Remove songs
+     *
+     * @param \My\PadBundle\Entity\Song $songs
+     */
+    public function removeSong(\My\PadBundle\Entity\Song $songs)
+    {
+        $this->songs->removeElement($songs);
+    }
 }

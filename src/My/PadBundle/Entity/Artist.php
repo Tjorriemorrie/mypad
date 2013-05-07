@@ -489,4 +489,54 @@ class Artist
     {
         return $this->fullAt;
     }
+
+    /**
+     * Remove albums
+     *
+     * @param \My\PadBundle\Entity\Album $albums
+     */
+    public function removeAlbum(\My\PadBundle\Entity\Album $albums)
+    {
+        $this->albums->removeElement($albums);
+    }
+
+    /**
+     * Remove songs
+     *
+     * @param \My\PadBundle\Entity\Song $songs
+     */
+    public function removeSong(\My\PadBundle\Entity\Song $songs)
+    {
+        $this->songs->removeElement($songs);
+    }
+
+    /**
+     * Remove similarsMain
+     *
+     * @param \My\PadBundle\Entity\Similar $similarsMain
+     */
+    public function removeSimilarsMain(\My\PadBundle\Entity\Similar $similarsMain)
+    {
+        $this->similarsMain->removeElement($similarsMain);
+    }
+
+    /**
+     * Remove similarsGood
+     *
+     * @param \My\PadBundle\Entity\Similar $similarsGood
+     */
+    public function removeSimilarsGood(\My\PadBundle\Entity\Similar $similarsGood)
+    {
+        $this->similarsGood->removeElement($similarsGood);
+    }
+
+    /**
+     * Remove similarsBad
+     *
+     * @param \My\PadBundle\Entity\Similar $similarsBad
+     */
+    public function removeSimilarsBad(\My\PadBundle\Entity\Similar $similarsBad)
+    {
+        $this->similarsBad->removeElement($similarsBad);
+    }
 }

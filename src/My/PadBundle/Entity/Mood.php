@@ -174,4 +174,24 @@ class Mood
     {
         $this->feelingsGood[] = $feelingsGood;
     }
+
+    /**
+     * Remove feelingsGood
+     *
+     * @param \My\PadBundle\Entity\Feeling $feelingsGood
+     */
+    public function removeFeelingsGood(\My\PadBundle\Entity\Feeling $feelingsGood)
+    {
+        $this->feelingsGood->removeElement($feelingsGood);
+    }
+
+    /**
+     * Remove feelingsBad
+     *
+     * @param \My\PadBundle\Entity\Feeling $feelingsBad
+     */
+    public function removeFeelingsBad(\My\PadBundle\Entity\Feeling $feelingsBad)
+    {
+        $this->feelingsBad->removeElement($feelingsBad);
+    }
 }

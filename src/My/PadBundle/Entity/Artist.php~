@@ -449,4 +449,44 @@ class Artist
     {
         $this->similarsMain[] = $similarsMain;
     }
+
+    /**
+     * Set fullCounter
+     *
+     * @param smallint $fullCounter
+     */
+    public function setFullCounter($fullCounter)
+    {
+        $this->fullCounter = $fullCounter;
+    }
+
+    /**
+     * Get fullCounter
+     *
+     * @return smallint 
+     */
+    public function getFullCounter()
+    {
+        return $this->fullCounter;
+    }
+
+    /**
+     * Set fullAt
+     *
+     * @param datetime $fullAt
+     */
+    public function setFullAt($fullAt)
+    {
+        $this->fullAt = $fullAt;
+    }
+
+    /**
+     * Get fullAt
+     *
+     * @return datetime 
+     */
+    public function getFullAt()
+    {
+        return $this->fullAt;
+    }
 }

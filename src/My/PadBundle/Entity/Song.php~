@@ -3,6 +3,8 @@
 namespace My\PadBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use My\PadBundle\Entity\Artist;
+use My\PadBundle\Entity\Album;
 
 /**
  * @ORM\Entity(repositoryClass="My\PadBundle\Repository\SongRepository")
@@ -30,7 +32,7 @@ class Song
 	/** @ORM\Column(type="string", length=255, unique=true) */
 	private $path;
 
-	/** @ORM\Column(type="string", length="3") */
+	/** @ORM\Column(type="string", length=3) */
 	private $codec;
 
 	/** @ORM\Column(type="smallint") */
@@ -153,7 +155,7 @@ class Song
 	/** Update Priority */
 	public function updatePriority($maxPlaycount)
 	{
-		if ($this->getPlaycount() == 0) {
+		if ($this->getPlaycount() == 0 || is_null($this->getTitle()) || is_null($this->getArtist())) {
 			$this->setPriority(1);
 		} else {
 			$playcountWeighed = $this->getPlaycount() / $maxPlaycount;
@@ -161,11 +163,9 @@ class Song
 			$rating = $this->getRating();
 			if (is_null($rating)) $rating = 0;
 
-			//$rating /= 1.5;
-			//$rating = sqrt($rating);
-			//$playcountWeighed *= 1.5;
-			//$playcountWeighed = sqrt($playcountWeighed);
-			$this->setPriority($rating - $playcountWeighed);
+            //$priority = abs($rating * 3 / 4) - abs($playcountWeighed * 1 / 4);
+            $priority = abs($rating * 3/6) - abs($playcountWeighed * 1/6) - abs((1 - $rating) * 2/6);
+			$this->setPriority($priority);
 		}
 	}
 
@@ -284,6 +284,8 @@ class Song
 	public function renameFile()
 	{
 		$reservedCharacters = array('/', '\\', '?', '%', '*', ':', '|', '"', '<', '>', '.');
+        // add non-working
+        $reservedCharacters[] = '#';
 
 		// TITLE
 		if (is_null($this->getTitle())) {
@@ -659,7 +661,7 @@ class Song
     /**
      * Get artist
      *
-     * @return My\PadBundle\Entity\Artist
+     * @return Artist
      */
     public function getArtist()
     {
@@ -679,7 +681,7 @@ class Song
     /**
      * Get album
      *
-     * @return My\PadBundle\Entity\Album
+     * @return Album
      */
     public function getAlbum()
     {
