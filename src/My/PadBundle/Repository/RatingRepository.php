@@ -3,6 +3,7 @@
 namespace My\PadBundle\Repository;
 
 use Doctrine\ORM\EntityRepository;
+use My\PadBundle\Entity\Song;
 
 /**
  * RatingRepository
@@ -38,27 +39,34 @@ class RatingRepository extends EntityRepository
 	/** Retrieves Songs to Rate */
 	public function getSongsToRate($current)
 	{
+        set_time_limit(10);
+
 		if ($current->getRated() >= max(5, $current->getPlaycount() * 3)) return null;
 		$countSongs = $this->getEntityManager()->getRepository('MyPadBundle:Song')->getSize(true);
 
 		//$avgRated = $this->getEntityManager()->getRepository('MyPadBundle:Song')->getHighestRated();
         $highestRatedSong = $this->getEntityManager()->getRepository('MyPadBundle:Song')->getHighestRated();
         $highestRated = max(1, $highestRatedSong->getRated());
+        //die(var_dump($highestRated));
         $ratedDecrement = $highestRated / $countSongs;
 
 		//$avgRatedAt = $this->getEntityManager()->getRepository('MyPadBundle:Song')->getAverageRatedAt();
 		$lastRatedAtSong = $this->getEntityManager()->getRepository('MyPadBundle:Song')->getLastRatedAt();
         $lastRatedAt = $lastRatedAtSong->getRatedAt();
+        //die(var_dump($lastRatedAt));
         $diff = time() - $lastRatedAt->getTimestamp();
         $timeIncrement = max(1, $diff / $countSongs);
 
-		$failCount = 0;
+        $enchanced = 20;
+//		$failCount = 0;
 		do {
-			$failCount++;
-			if ($failCount > $countSongs) return;
+//			$failCount++;
+//			if ($failCount > $countSongs * $enchanced) {
+//                return null;
+//            }
 
-			$lastRatedAt->modify('+' . round($timeIncrement) * 5 . ' seconds');
-			$highestRated -= $ratedDecrement * 5;
+			$lastRatedAt->modify('+' . round($timeIncrement) * $enchanced . ' seconds');
+			$highestRated -= $ratedDecrement * $enchanced;
 
 			$qb = $this->getEntityManager()->createQueryBuilder();
 			$song = $qb->select('s')->from('MyPadBundle:Song', 's')
@@ -71,13 +79,77 @@ class RatingRepository extends EntityRepository
 			is_null($song->getTitle()) or
 			is_null($song->getArtist()) or
 			$song->getRatedAt() > $lastRatedAt or
-			$song->getRated() > $highestRated or
-			$this->hasCompeted($current, $song)
+			$song->getRated() > $highestRated
+			//$this->hasCompeted($current, $song)
 		);
 
 		return $song;
 	}
 
+	/**
+     * Get song to rate
+     * Retrieves a song that was rated long ago
+     */
+	public function getSongToRate(Song $current)
+	{
+        set_time_limit(5);
+        /** @var SongRepository $songRepo */
+        $songRepo = $this->getEntityManager()->getRepository('MyPadBundle:Song');
+
+		if ($current->getRated() >= max(5, $current->getPlaycount() * 3)) {
+            return null;
+        }
+
+		$countSongs = $songRepo->getSize(true);
+        if ($countSongs < 2) {
+            return null;
+        }
+
+        $highestRatedSong = $songRepo->getHighestRated();
+        $highestRated = max(1, $highestRatedSong->getRated());
+        $ratedDecrement = $highestRated / $countSongs;
+
+		$lastRatedAtSong = $songRepo->getLastRatedAt();
+        $lastRatedAt = $lastRatedAtSong->getRatedAt();
+        $diff = time() - $lastRatedAt->getTimestamp();
+        $timeIncrement = max(1, $diff / $countSongs);
+
+        $ratedCutOff = $highestRated / 2;
+        $lastRatedAt->modify('+' . ($diff / 2) . ' seconds');
+		do {
+			$lastRatedAt->modify('+' . round($timeIncrement) . ' seconds');
+			$ratedCutOff += $ratedDecrement;
+
+            $query = $this->getEntityManager()->createQuery("
+                    SELECT s
+                    FROM MyPadBundle:Song s
+                    WHERE s.id <> :id
+                    AND s.playcount >= :playcount
+                    AND s.title IS NOT NULL
+                    AND s.artist IS NOT NULL
+                    AND s.ratedAt < :ratedAt
+                    AND s.rated < :rated
+                    ORDER BY s.playcount DESC
+                ")
+                ->setMaxResults(1)
+                ->setParameters(array(
+                    'id' => $current->getId(),
+                    'playcount' => 1,
+                    'ratedAt' => $lastRatedAt->format('Y-m-d H:i:s'),
+                    'rated' => $ratedCutOff
+                ));
+            $song = $query->getOneOrNullResult();
+            if (is_null($song)) {
+                $songInfo = 'no song found';
+            } else {
+                $songInfo = 'song ' . $song->getId() . ' ' . $song->getRatedAt()->format('Y-m-d H:i:s') . ' ' . $song->getRated();
+            }
+            $log[] = $lastRatedAt->format('Y-m-d H:i') . ' ' . round($ratedCutOff) . ': ' . $songInfo;
+		} while (is_null($song));
+
+        //die(var_dump($log));
+		return $song;
+	}
 
 	/** Clean table */
 	public function clean()

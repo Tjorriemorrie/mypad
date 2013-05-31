@@ -65,7 +65,7 @@ $(function()
 	$('#jquery_jplayer_1').jPlayer(
 	{
 		solution			: 'html, flash',
-		swfPath				: '/jQuery.jPlayer.2.1.0',
+		swfPath				: '/jQuery.jPlayer.2.3.0',
 		supplied			: '{{ song.codec }}',
 		preload				: 'auto',
 		volume				: Math.max(0.10, {% if song.rating is null %}0{% else %}{{ (song.rating * song.rating) }}{% endif %}),
