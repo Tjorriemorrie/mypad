@@ -98,7 +98,6 @@ class PlayController extends Controller
 	////////////////////////////////////////////////////////////////////////////
 	////////////////////////////////////////////////////////////////////////////
 
-
 	/**
 	 * @Route("/getrating", name="get_rating")
 	 * @Template()
@@ -113,10 +112,10 @@ class PlayController extends Controller
     	$song = $em->getRepository('MyPadBundle:Song')->find($songId);
     	if (!$song) throw $this->createNotFoundException('No song to play');
 
-    	$compete = $em->getRepository('MyPadBundle:Rating')->getSongToRate($song);
-    	if ($compete && $em->getRepository('MyPadBundle:Rating')->hasCompeted($song, $compete)) {
-            $compete = null;
-        }
+        do {
+    	    $compete = $em->getRepository('MyPadBundle:Rating')->getSongToRate($song);
+        } while ($compete && $em->getRepository('MyPadBundle:Rating')->hasCompeted($song, $compete));
+
     	$em->clear();
     	return array('compete'=>$compete);
 	}
