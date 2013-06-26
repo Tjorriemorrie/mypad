@@ -124,8 +124,8 @@ class StatsController extends Controller
     	if (!is_null($tip)) return $tip;
 
     	// remove unliked and unlistened album
-    	//$tip = $em->getRepository('MyPadBundle:Album')->getAlbumToRemove();
-    	//if (!is_null($tip)) return $tip;
+    	$tip = $em->getRepository('MyPadBundle:Album')->getAlbumToRemove();
+    	if (!is_null($tip)) return $tip;
 
     	// most popular artist
     	$tip = $em->getRepository('MyPadBundle:Artist')->getTopArtistToAdd();
