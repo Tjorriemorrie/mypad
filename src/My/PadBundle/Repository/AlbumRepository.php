@@ -98,7 +98,7 @@ class AlbumRepository extends EntityRepository
      */
     public function getAlbumToRemove()
     {
-        $dateCutoff = new \DateTime('-5 months');
+        $dateCutoff = new \DateTime('-4 months');
 
         $query = $this->getEntityManager()->createQuery("
     	        SELECT b
