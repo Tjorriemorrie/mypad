@@ -64,7 +64,6 @@ class StatsController extends Controller
     	} else die('unknown');
     }
 
-
     /**
      * @Route("/detail", name="detail")
      * @Template()
@@ -79,9 +78,9 @@ class StatsController extends Controller
     	$song = $em->getRepository('MyPadBundle:Song')->find($songId);
     	if (!$song) throw $this->createNotFoundException('No song to play');
 
-    	$similars = $em->getRepository('MyPadBundle:Similar')->getClose($song->getArtist());
+    	//$similars = $em->getRepository('MyPadBundle:Similar')->getClose($song->getArtist());
 
-    	return array('song'=>$song, 'similars'=>$similars);
+    	return array('song'=>$song);
     }
 
 

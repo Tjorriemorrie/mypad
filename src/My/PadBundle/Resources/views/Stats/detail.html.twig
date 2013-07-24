@@ -12,22 +12,6 @@
     <br/>Played last on {{ song.playedAt ? song.playedAt|date('j M Y') : '-' }}
 </h6>
 
-
-<div class="similars">
-	<dl>
-		<dt>Similar artists</dt>
-		{% if similars is null %}
-			<dd class="larger">No artist similar for now</dd>
-		{% else %}
-			{% for name, score in similars %}
-				<dd>[{{ score }}] {{ name }}</dd>
-			{% endfor %}
-		{% endif %}
-	</dl>
-</div>
-
-
-
 <script type="text/javascript">
 document.title = "{{ song.title|raw }}{% if song.artist is not null %} :: {{ song.artist.name|raw }}{% endif %}";
 </script>

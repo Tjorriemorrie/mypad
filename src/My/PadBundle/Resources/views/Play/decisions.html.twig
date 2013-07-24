@@ -1,7 +1,4 @@
 <div id="rating"></div>
-<div id="similar"></div>
-
-
 
 <script type="text/javascript">
 $(function()
@@ -10,7 +7,6 @@ $(function()
 	$('#decisions').fadeIn(400, function()
 	{
 		$('#rating').load('{{ path('get_rating') }}');
-		$('#similar').load('{{ path('get_similar') }}');
 	});
 });
 </script>

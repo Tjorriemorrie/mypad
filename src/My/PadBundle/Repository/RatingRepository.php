@@ -39,7 +39,7 @@ class RatingRepository extends EntityRepository
 	/** Retrieves Songs to Rate */
 	public function getSongsToRate($current)
 	{
-        set_time_limit(10);
+        $timeStart = time();
 
 		if ($current->getRated() >= max(5, $current->getPlaycount() * 3)) return null;
 		$countSongs = $this->getEntityManager()->getRepository('MyPadBundle:Song')->getSize(true);
@@ -57,7 +57,7 @@ class RatingRepository extends EntityRepository
         $diff = time() - $lastRatedAt->getTimestamp();
         $timeIncrement = max(1, $diff / $countSongs);
 
-        $enchanced = 20;
+        $enchanced = 50;
 //		$failCount = 0;
 		do {
 //			$failCount++;
@@ -74,6 +74,11 @@ class RatingRepository extends EntityRepository
 				->setMaxResults(1)
 				->getQuery()
 				->getSingleResult();
+
+            if (time() - $timeStart > 2) {
+                break;
+            }
+
 		} while ($song->getId() == $current->getId() or
 			$song->getPlaycount() < 1 or
 			is_null($song->getTitle()) or
@@ -92,7 +97,8 @@ class RatingRepository extends EntityRepository
      */
 	public function getSongToRate(Song $current)
 	{
-        set_time_limit(10);
+        set_time_limit(5);
+
         /** @var SongRepository $songRepo */
         $songRepo = $this->getEntityManager()->getRepository('MyPadBundle:Song');
 
@@ -114,8 +120,8 @@ class RatingRepository extends EntityRepository
         $diff = time() - $lastRatedAt->getTimestamp();
         $timeIncrement = max(1, $diff / $countSongs);
 
-        $ratedCutOff = $highestRated / 2;
-        $lastRatedAt->modify('+' . round($diff / 2) . ' seconds');
+        $ratedCutOff = $highestRated * 0.25;
+        $lastRatedAt->modify('+' . round($diff * 0.75) . ' seconds');
 		do {
 			$lastRatedAt->modify('+' . round($timeIncrement) . ' seconds');
 			$ratedCutOff += $ratedDecrement;

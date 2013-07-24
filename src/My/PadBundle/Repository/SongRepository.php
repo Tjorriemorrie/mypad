@@ -81,6 +81,8 @@ class SongRepository extends EntityRepository
 
 	/**
 	 * Gets average date of songs being played at
+	 *
+	 * @return \DateTime
 	 */
 	public function getAveragePlayedAt()
 	{

@@ -3,6 +3,7 @@
 namespace My\PadBundle\Repository;
 
 use Doctrine\ORM\EntityRepository;
+use My\PadBundle\Repository\SongRepository;
 
 /**
  * AlbumRepository
@@ -98,7 +99,9 @@ class AlbumRepository extends EntityRepository
      */
     public function getAlbumToRemove()
     {
-        $dateCutoff = new \DateTime('-4 months');
+	    /** @var SongRepository $songRepo */
+	    $songRepo = $this->getEntityManager()->getRepository('MyPadBundle:Song');
+	    $dateCutoff = $songRepo->getAveragePlayedAt();
 
         $query = $this->getEntityManager()->createQuery("
     	        SELECT b
