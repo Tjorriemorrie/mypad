@@ -4,6 +4,7 @@ namespace My\PadBundle\Repository;
 
 use Doctrine\ORM\EntityRepository;
 use My\PadBundle\Repository\SongRepository;
+use My\PadBundle\Entity\Album;
 
 /**
  * AlbumRepository
@@ -102,6 +103,7 @@ class AlbumRepository extends EntityRepository
 	    /** @var SongRepository $songRepo */
 	    $songRepo = $this->getEntityManager()->getRepository('MyPadBundle:Song');
 	    $dateCutoff = $songRepo->getAveragePlayedAt();
+	    $dateCutoff->modify('-40 days');
 
         $query = $this->getEntityManager()->createQuery("
     	        SELECT b
@@ -190,6 +192,7 @@ class AlbumRepository extends EntityRepository
             ->getResult();
         if (!$albums) return;
 
+	    /** @var Album[] $albums */
         foreach ($albums as $album) {
 
             $albumName = '<a href="http://en.wikipedia.org/wiki/Special:Search/' . str_replace(' ', '_', $album->getTitle()) . '" target="_newtab">' . $album->getTitle() . '</a>';

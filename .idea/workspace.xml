@@ -2,21 +2,65 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1b7835ae-5050-4c0d-98b0-30bb32fd5fa8" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/frameworkRootSettings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/My/PadBundle/Repository/AlbumRepository.php" afterPath="$PROJECT_DIR$/src/My/PadBundle/Repository/AlbumRepository.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/My/PadBundle/Repository/RatingRepository.php" afterPath="$PROJECT_DIR$/src/My/PadBundle/Repository/RatingRepository.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/My/PadBundle/Repository/SongRepository.php" afterPath="$PROJECT_DIR$/src/My/PadBundle/Repository/SongRepository.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/My/PadBundle/Controller/StatsController.php" afterPath="$PROJECT_DIR$/src/My/PadBundle/Controller/StatsController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/My/PadBundle/Resources/views/Play/decisions.html.twig" afterPath="$PROJECT_DIR$/src/My/PadBundle/Resources/views/Play/decisions.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/My/PadBundle/Resources/views/Stats/detail.html.twig" afterPath="$PROJECT_DIR$/src/My/PadBundle/Resources/views/Stats/detail.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="mypad.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="1b7835ae-5050-4c0d-98b0-30bb32fd5fa8" time="1374651997209" ignored="false" />
+    <file path="/Dummy.txt" changelist="1b7835ae-5050-4c0d-98b0-30bb32fd5fa8" time="1375780200806" ignored="false" />
     <file path="/StatsController.php" changelist="1b7835ae-5050-4c0d-98b0-30bb32fd5fa8" time="1373540864628" ignored="false" />
-    <file path="/RatingRepository.php" changelist="1b7835ae-5050-4c0d-98b0-30bb32fd5fa8" time="1373541096519" ignored="false" />
-    <file path="/AlbumRepository.php" changelist="1b7835ae-5050-4c0d-98b0-30bb32fd5fa8" time="1374478233563" ignored="false" />
+    <file path="/RatingRepository.php" changelist="1b7835ae-5050-4c0d-98b0-30bb32fd5fa8" time="1375263446112" ignored="false" />
+    <file path="/AlbumRepository.php" changelist="1b7835ae-5050-4c0d-98b0-30bb32fd5fa8" time="1375775037621" ignored="false" />
+    <file path="$PROJECT_DIR$/../investui/app/browse/browse.js" changelist="1b7835ae-5050-4c0d-98b0-30bb32fd5fa8" time="1375263398892" ignored="false" />
+    <file path="/browse.js" changelist="1b7835ae-5050-4c0d-98b0-30bb32fd5fa8" time="1375263315137" ignored="false" />
+    <file path="$PROJECT_DIR$/../investui/app/api/invest.js" changelist="1b7835ae-5050-4c0d-98b0-30bb32fd5fa8" time="1375263161115" ignored="false" />
+    <file path="$PROJECT_DIR$/../investui/app/browse/bSectors.html" changelist="1b7835ae-5050-4c0d-98b0-30bb32fd5fa8" time="1375263081929" ignored="false" />
+    <file path="/bSectors.html" changelist="1b7835ae-5050-4c0d-98b0-30bb32fd5fa8" time="1375263079914" ignored="false" />
+    <file path="$PROJECT_DIR$/../invest/src/JJ/MainBundle/Controller/SectorsController.php" changelist="1b7835ae-5050-4c0d-98b0-30bb32fd5fa8" time="1375263140322" ignored="false" />
+    <file path="/SectorsController.php" changelist="1b7835ae-5050-4c0d-98b0-30bb32fd5fa8" time="1375263131658" ignored="false" />
+    <file path="/invest.js" changelist="1b7835ae-5050-4c0d-98b0-30bb32fd5fa8" time="1375263159196" ignored="false" />
+    <file path="$PROJECT_DIR$/../talentec-training/application/libraries/emailer/emailer.php" changelist="1b7835ae-5050-4c0d-98b0-30bb32fd5fa8" time="1375360509227" ignored="false" />
+    <file path="/emailer.php" changelist="1b7835ae-5050-4c0d-98b0-30bb32fd5fa8" time="1375360503896" ignored="false" />
+    <file path="$PROJECT_DIR$/../talentec-training/application/controllers/cronmailer.php" changelist="1b7835ae-5050-4c0d-98b0-30bb32fd5fa8" time="1375360329904" ignored="false" />
+    <file path="/cronmailer.php" changelist="1b7835ae-5050-4c0d-98b0-30bb32fd5fa8" time="1375360098620" ignored="false" />
+    <file path="$PROJECT_DIR$/../talentec-training/application/models/reports/report_template_schedule.php" changelist="1b7835ae-5050-4c0d-98b0-30bb32fd5fa8" time="1375358604345" ignored="false" />
+    <file path="/report_template_schedule.php" changelist="1b7835ae-5050-4c0d-98b0-30bb32fd5fa8" time="1375358600771" ignored="false" />
+    <file path="$PROJECT_DIR$/../talentec-training/js/reports/configuration.js" changelist="1b7835ae-5050-4c0d-98b0-30bb32fd5fa8" time="1375358954990" ignored="false" />
+    <file path="/configuration.js" changelist="1b7835ae-5050-4c0d-98b0-30bb32fd5fa8" time="1375358942051" ignored="false" />
+    <file path="$PROJECT_DIR$/../talentec-training/application/models/reports/report_template_schedule_manager.php" changelist="1b7835ae-5050-4c0d-98b0-30bb32fd5fa8" time="1375359966122" ignored="false" />
+    <file path="/report_template_schedule_manager.php" changelist="1b7835ae-5050-4c0d-98b0-30bb32fd5fa8" time="1375359964229" ignored="false" />
+    <file path="$PROJECT_DIR$/../talentec-training/application/config/autoload.php" changelist="1b7835ae-5050-4c0d-98b0-30bb32fd5fa8" time="1375363804482" ignored="false" />
+    <file path="$PROJECT_DIR$/../talentec-training/application/libraries/phantomjs/phantomjs.php" changelist="1b7835ae-5050-4c0d-98b0-30bb32fd5fa8" time="1375361902578" ignored="false" />
+    <file path="/phantomjs.php" changelist="1b7835ae-5050-4c0d-98b0-30bb32fd5fa8" time="1375361612392" ignored="false" />
+    <file path="$PROJECT_DIR$/../talentec-training/phantomjs/rasterize.js" changelist="1b7835ae-5050-4c0d-98b0-30bb32fd5fa8" time="1375361681414" ignored="false" />
+    <file path="$PROJECT_DIR$/../talentec-training/application/views/reports/result.php" changelist="1b7835ae-5050-4c0d-98b0-30bb32fd5fa8" time="1375362153981" ignored="false" />
+    <file path="/result.php" changelist="1b7835ae-5050-4c0d-98b0-30bb32fd5fa8" time="1375361921537" ignored="false" />
+    <file path="$PROJECT_DIR$/../talentec-training/application/controllers/reports.php" changelist="1b7835ae-5050-4c0d-98b0-30bb32fd5fa8" time="1375364606827" ignored="false" />
+    <file path="$PROJECT_DIR$/../talentec-training/application/libraries/reports/report.php" changelist="1b7835ae-5050-4c0d-98b0-30bb32fd5fa8" time="1375363726607" ignored="false" />
+    <file path="/report.php" changelist="1b7835ae-5050-4c0d-98b0-30bb32fd5fa8" time="1375363736678" ignored="false" />
+    <file path="/report_student_exam_summary.php" changelist="1b7835ae-5050-4c0d-98b0-30bb32fd5fa8" time="1375364397600" ignored="false" />
+    <file path="$PROJECT_DIR$/../talentec-training/application/libraries/reports/report_student_exam_summary.php" changelist="1b7835ae-5050-4c0d-98b0-30bb32fd5fa8" time="1375364559768" ignored="false" />
+    <file path="/a.dummy" changelist="1b7835ae-5050-4c0d-98b0-30bb32fd5fa8" time="1375363915007" ignored="false" />
+    <file path="$PROJECT_DIR$/../talentec-training/application/libraries/reports/report_abstract.php" changelist="1b7835ae-5050-4c0d-98b0-30bb32fd5fa8" time="1375363736990" ignored="false" />
+    <file path="$PROJECT_DIR$/../talentec-training/application/libraries/reports/report_question-analysis.php" changelist="1b7835ae-5050-4c0d-98b0-30bb32fd5fa8" time="1375363909485" ignored="false" />
+    <file path="/report_question-analysis.php" changelist="1b7835ae-5050-4c0d-98b0-30bb32fd5fa8" time="1375364192635" ignored="false" />
+    <file path="$PROJECT_DIR$/../talentec-training/application/libraries/reports/report_question_analysis.php" changelist="1b7835ae-5050-4c0d-98b0-30bb32fd5fa8" time="1375364559768" ignored="false" />
+    <file path="/reports.php" changelist="1b7835ae-5050-4c0d-98b0-30bb32fd5fa8" time="1375364452240" ignored="false" />
+    <file path="$PROJECT_DIR$/../talentec-training/js/reports/graphs/student_exam_summary_pie.js" changelist="1b7835ae-5050-4c0d-98b0-30bb32fd5fa8" time="1375364032539" ignored="false" />
+    <file path="$PROJECT_DIR$/../talentec-training/CI_phpStorm.php" changelist="1b7835ae-5050-4c0d-98b0-30bb32fd5fa8" time="1375364260393" ignored="false" />
+    <file path="$PROJECT_DIR$/../invest/src/JJ/MainBundle/DataFixtures/ORM/SectorFixture.php" changelist="1b7835ae-5050-4c0d-98b0-30bb32fd5fa8" time="1375365260785" ignored="false" />
+    <file path="/SectorFixture.php" changelist="1b7835ae-5050-4c0d-98b0-30bb32fd5fa8" time="1375365238829" ignored="false" />
+    <file path="$PROJECT_DIR$/../talentec-training/application/libraries/reports/report_topic_feedback.php" changelist="1b7835ae-5050-4c0d-98b0-30bb32fd5fa8" time="1375778882404" ignored="false" />
+    <file path="/report_topic_feedback.php" changelist="1b7835ae-5050-4c0d-98b0-30bb32fd5fa8" time="1375778880764" ignored="false" />
+    <file path="$PROJECT_DIR$/../talentec-training/application/models/students/student_exam_manager.php" changelist="1b7835ae-5050-4c0d-98b0-30bb32fd5fa8" time="1375778638965" ignored="false" />
+    <file path="/student_exam_manager.php" changelist="1b7835ae-5050-4c0d-98b0-30bb32fd5fa8" time="1375777586629" ignored="false" />
+    <file path="$PROJECT_DIR$/../talentec-training/application/models/students/student_exam_repository.php" changelist="1b7835ae-5050-4c0d-98b0-30bb32fd5fa8" time="1375778207597" ignored="false" />
+    <file path="/student_exam_repository.php" changelist="1b7835ae-5050-4c0d-98b0-30bb32fd5fa8" time="1375777824746" ignored="false" />
+    <file path="$PROJECT_DIR$/../talentec-training/index.php" changelist="1b7835ae-5050-4c0d-98b0-30bb32fd5fa8" time="1375779814429" ignored="false" />
+    <file path="/index.php" changelist="1b7835ae-5050-4c0d-98b0-30bb32fd5fa8" time="1375779813028" ignored="false" />
+    <file path="$PROJECT_DIR$/../invest/app/config/rest.yml" changelist="1b7835ae-5050-4c0d-98b0-30bb32fd5fa8" time="1375780028218" ignored="false" />
+    <file path="/rest.yml" changelist="1b7835ae-5050-4c0d-98b0-30bb32fd5fa8" time="1375780028218" ignored="false" />
+    <file path="$PROJECT_DIR$/../invest/app/cache/dev/appDevDebugProjectContainer.xml" changelist="1b7835ae-5050-4c0d-98b0-30bb32fd5fa8" time="1375780049467" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +87,7 @@
               <file leaf-file-name="PlayController.php" pinned="false" current="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/src/My/PadBundle/Controller/PlayController.php">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state line="121" column="0" selection-start="3659" selection-end="3659" vertical-scroll-proportion="0.91122717">
+                    <state line="121" column="0" selection-start="3659" selection-end="3659" vertical-scroll-proportion="0.04450262">
                       <folding />
                     </state>
                   </provider>
@@ -52,7 +96,7 @@
               <file leaf-file-name="StatsController.php" pinned="false" current="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/src/My/PadBundle/Controller/StatsController.php">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state line="198" column="27" selection-start="6676" selection-end="6676" vertical-scroll-proportion="-6.8461537">
+                    <state line="198" column="27" selection-start="6676" selection-end="6676" vertical-scroll-proportion="0.0">
                       <folding />
                     </state>
                   </provider>
@@ -62,28 +106,10 @@
           </split-first>
           <split-second>
             <leaf>
-              <file leaf-file-name="index.html.twig" pinned="false" current="false" current-in-tab="false">
-                <entry file="file://$PROJECT_DIR$/src/My/PadBundle/Resources/views/Default/index.html.twig">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state line="14" column="33" selection-start="345" selection-end="345" vertical-scroll-proportion="-9.153846">
-                      <folding />
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-              <file leaf-file-name="index.html.twig" pinned="false" current="false" current-in-tab="false">
-                <entry file="file://$PROJECT_DIR$/src/My/PadBundle/Resources/views/Play/index.html.twig">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state line="152" column="40" selection-start="4068" selection-end="4068" vertical-scroll-proportion="-3.3846154">
-                      <folding />
-                    </state>
-                  </provider>
-                </entry>
-              </file>
               <file leaf-file-name="detail.html.twig" pinned="false" current="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/src/My/PadBundle/Resources/views/Stats/detail.html.twig">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state line="5" column="47" selection-start="387" selection-end="387" vertical-scroll-proportion="-2.7307692">
+                    <state line="5" column="47" selection-start="387" selection-end="387" vertical-scroll-proportion="0.0">
                       <folding />
                     </state>
                   </provider>
@@ -92,7 +118,7 @@
               <file leaf-file-name="info.html.twig" pinned="false" current="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/src/My/PadBundle/Resources/views/Play/info.html.twig">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state line="29" column="26" selection-start="1309" selection-end="1309" vertical-scroll-proportion="-4.576923">
+                    <state line="29" column="26" selection-start="1309" selection-end="1309" vertical-scroll-proportion="0.0">
                       <folding />
                     </state>
                   </provider>
@@ -101,16 +127,16 @@
               <file leaf-file-name="decisions.html.twig" pinned="false" current="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/src/My/PadBundle/Resources/views/Play/decisions.html.twig">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state line="11" column="9" selection-start="234" selection-end="234" vertical-scroll-proportion="-7.1923075">
+                    <state line="11" column="9" selection-start="234" selection-end="234" vertical-scroll-proportion="0.0">
                       <folding />
                     </state>
                   </provider>
                 </entry>
               </file>
-              <file leaf-file-name="getrating.html.twig" pinned="false" current="true" current-in-tab="true">
+              <file leaf-file-name="getrating.html.twig" pinned="false" current="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/src/My/PadBundle/Resources/views/Play/getrating.html.twig">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state line="45" column="0" selection-start="1313" selection-end="1313" vertical-scroll-proportion="0.9098143">
+                    <state line="45" column="0" selection-start="1313" selection-end="1313" vertical-scroll-proportion="0.73138297">
                       <folding />
                     </state>
                   </provider>
@@ -140,16 +166,16 @@
               <file leaf-file-name="RatingRepository.php" pinned="false" current="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/src/My/PadBundle/Repository/RatingRepository.php">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state line="108" column="42" selection-start="3428" selection-end="3428" vertical-scroll-proportion="0.0">
+                    <state line="123" column="12" selection-start="3950" selection-end="3950" vertical-scroll-proportion="0.0">
                       <folding />
                     </state>
                   </provider>
                 </entry>
               </file>
-              <file leaf-file-name="AlbumRepository.php" pinned="false" current="false" current-in-tab="true">
+              <file leaf-file-name="AlbumRepository.php" pinned="false" current="true" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/src/My/PadBundle/Repository/AlbumRepository.php">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state line="103" column="18" selection-start="3277" selection-end="3277" vertical-scroll-proportion="0.04509284">
+                    <state line="105" column="32" selection-start="3374" selection-end="3374" vertical-scroll-proportion="0.55851066">
                       <folding>
                         <element signature="e#43#77#0" expanded="true" />
                       </folding>
@@ -189,12 +215,12 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/src/My/PadBundle/Repository/RatingRepository.php" />
         <option value="$PROJECT_DIR$/src/My/PadBundle/Repository/SongRepository.php" />
-        <option value="$PROJECT_DIR$/src/My/PadBundle/Repository/AlbumRepository.php" />
         <option value="$PROJECT_DIR$/src/My/PadBundle/Controller/StatsController.php" />
         <option value="$PROJECT_DIR$/src/My/PadBundle/Resources/views/Stats/detail.html.twig" />
         <option value="$PROJECT_DIR$/src/My/PadBundle/Resources/views/Play/decisions.html.twig" />
+        <option value="$PROJECT_DIR$/src/My/PadBundle/Repository/RatingRepository.php" />
+        <option value="$PROJECT_DIR$/src/My/PadBundle/Repository/AlbumRepository.php" />
       </list>
     </option>
   </component>
@@ -231,7 +257,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -464,6 +489,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -490,7 +516,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Framework" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18676628" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19743863" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -604,75 +630,75 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/My/PadBundle/Repository/AlbumRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="103" column="18" selection-start="3277" selection-end="3277" vertical-scroll-proportion="0.04509284">
-          <folding>
-            <element signature="e#43#77#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/My/PadBundle/Repository/RatingRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/My/PadBundle/Resources/views/Default/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="33" selection-start="345" selection-end="345" vertical-scroll-proportion="-9.153846">
+        <state line="14" column="33" selection-start="345" selection-end="345" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/My/PadBundle/Resources/views/Play/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="152" column="40" selection-start="4068" selection-end="4068" vertical-scroll-proportion="-3.3846154">
+        <state line="152" column="40" selection-start="4068" selection-end="4068" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/My/PadBundle/Resources/views/Stats/detail.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="47" selection-start="387" selection-end="387" vertical-scroll-proportion="-2.7307692">
+        <state line="5" column="47" selection-start="387" selection-end="387" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/My/PadBundle/Resources/views/Play/info.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="26" selection-start="1309" selection-end="1309" vertical-scroll-proportion="-4.576923">
+        <state line="29" column="26" selection-start="1309" selection-end="1309" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/My/PadBundle/Controller/StatsController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="198" column="27" selection-start="6676" selection-end="6676" vertical-scroll-proportion="-6.8461537">
+        <state line="198" column="27" selection-start="6676" selection-end="6676" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/My/PadBundle/Controller/PlayController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="121" column="0" selection-start="3659" selection-end="3659" vertical-scroll-proportion="0.91122717">
+        <state line="121" column="0" selection-start="3659" selection-end="3659" vertical-scroll-proportion="0.04450262">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/My/PadBundle/Resources/views/Play/decisions.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="9" selection-start="234" selection-end="234" vertical-scroll-proportion="-7.1923075">
+        <state line="11" column="9" selection-start="234" selection-end="234" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/My/PadBundle/Resources/views/Play/getrating.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="0" selection-start="1313" selection-end="1313" vertical-scroll-proportion="0.9098143">
+        <state line="45" column="0" selection-start="1313" selection-end="1313" vertical-scroll-proportion="0.73138297">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/My/PadBundle/Repository/RatingRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="123" column="12" selection-start="3950" selection-end="3950" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/My/PadBundle/Repository/AlbumRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="105" column="32" selection-start="3374" selection-end="3374" vertical-scroll-proportion="0.55851066">
+          <folding>
+            <element signature="e#43#77#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
