@@ -2,12 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1b7835ae-5050-4c0d-98b0-30bb32fd5fa8" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.phar" afterPath="$PROJECT_DIR$/composer.phar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/My/PadBundle/Repository/AlbumRepository.php" afterPath="$PROJECT_DIR$/src/My/PadBundle/Repository/AlbumRepository.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bootstrap.php.cache" afterPath="$PROJECT_DIR$/app/bootstrap.php.cache" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/mypad.iml" afterPath="$PROJECT_DIR$/.idea/mypad.iml" />
     </list>
     <ignored path="mypad.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="1b7835ae-5050-4c0d-98b0-30bb32fd5fa8" time="1375780200806" ignored="false" />
+    <file path="/Dummy.txt" changelist="1b7835ae-5050-4c0d-98b0-30bb32fd5fa8" time="1376125473057" ignored="false" />
     <file path="/StatsController.php" changelist="1b7835ae-5050-4c0d-98b0-30bb32fd5fa8" time="1373540864628" ignored="false" />
     <file path="/RatingRepository.php" changelist="1b7835ae-5050-4c0d-98b0-30bb32fd5fa8" time="1375263446112" ignored="false" />
     <file path="/AlbumRepository.php" changelist="1b7835ae-5050-4c0d-98b0-30bb32fd5fa8" time="1375775037621" ignored="false" />
@@ -87,7 +90,7 @@
               <file leaf-file-name="PlayController.php" pinned="false" current="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/src/My/PadBundle/Controller/PlayController.php">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state line="121" column="0" selection-start="3659" selection-end="3659" vertical-scroll-proportion="0.04450262">
+                    <state line="121" column="0" selection-start="3659" selection-end="3659" vertical-scroll-proportion="0.044386424">
                       <folding />
                     </state>
                   </provider>
@@ -136,7 +139,7 @@
               <file leaf-file-name="getrating.html.twig" pinned="false" current="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/src/My/PadBundle/Resources/views/Play/getrating.html.twig">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state line="45" column="0" selection-start="1313" selection-end="1313" vertical-scroll-proportion="0.73138297">
+                    <state line="45" column="0" selection-start="1313" selection-end="1313" vertical-scroll-proportion="0.7612732">
                       <folding />
                     </state>
                   </provider>
@@ -175,7 +178,7 @@
               <file leaf-file-name="AlbumRepository.php" pinned="false" current="true" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/src/My/PadBundle/Repository/AlbumRepository.php">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state line="105" column="32" selection-start="3374" selection-end="3374" vertical-scroll-proportion="0.55851066">
+                    <state line="105" column="32" selection-start="3374" selection-end="3374" vertical-scroll-proportion="0.04509284">
                       <folding>
                         <element signature="e#43#77#0" expanded="true" />
                       </folding>
@@ -257,6 +260,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -489,7 +493,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -508,7 +511,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -516,7 +519,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Framework" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19743863" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1995731" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -632,16 +635,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/My/PadBundle/Resources/views/Default/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="33" selection-start="345" selection-end="345" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="14" column="33" selection-start="345" selection-end="345" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/My/PadBundle/Resources/views/Play/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="152" column="40" selection-start="4068" selection-end="4068" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="152" column="40" selection-start="4068" selection-end="4068" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/My/PadBundle/Resources/views/Stats/detail.html.twig">
@@ -667,7 +666,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/My/PadBundle/Controller/PlayController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="121" column="0" selection-start="3659" selection-end="3659" vertical-scroll-proportion="0.04450262">
+        <state line="121" column="0" selection-start="3659" selection-end="3659" vertical-scroll-proportion="0.044386424">
           <folding />
         </state>
       </provider>
@@ -681,7 +680,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/My/PadBundle/Resources/views/Play/getrating.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="0" selection-start="1313" selection-end="1313" vertical-scroll-proportion="0.73138297">
+        <state line="45" column="0" selection-start="1313" selection-end="1313" vertical-scroll-proportion="0.7612732">
           <folding />
         </state>
       </provider>
@@ -695,7 +694,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/My/PadBundle/Repository/AlbumRepository.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="105" column="32" selection-start="3374" selection-end="3374" vertical-scroll-proportion="0.55851066">
+        <state line="105" column="32" selection-start="3374" selection-end="3374" vertical-scroll-proportion="0.04509284">
           <folding>
             <element signature="e#43#77#0" expanded="true" />
           </folding>

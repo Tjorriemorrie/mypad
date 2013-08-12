@@ -103,7 +103,7 @@ class AlbumRepository extends EntityRepository
 	    /** @var SongRepository $songRepo */
 	    $songRepo = $this->getEntityManager()->getRepository('MyPadBundle:Song');
 	    $dateCutoff = $songRepo->getAveragePlayedAt();
-	    $dateCutoff->modify('-40 days');
+	    $dateCutoff->modify('-15 days');
 
         $query = $this->getEntityManager()->createQuery("
     	        SELECT b
