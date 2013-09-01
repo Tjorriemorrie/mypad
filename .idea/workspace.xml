@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1b7835ae-5050-4c0d-98b0-30bb32fd5fa8" name="Default" comment="" />
+    <list default="true" id="1b7835ae-5050-4c0d-98b0-30bb32fd5fa8" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/My/PadBundle/Entity/Song.php" afterPath="$PROJECT_DIR$/src/My/PadBundle/Entity/Song.php" />
+    </list>
     <ignored path="mypad.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="1b7835ae-5050-4c0d-98b0-30bb32fd5fa8" time="1377844622078" ignored="false" />
+    <file path="/Dummy.txt" changelist="1b7835ae-5050-4c0d-98b0-30bb32fd5fa8" time="1377977598176" ignored="false" />
     <file path="/StatsController.php" changelist="1b7835ae-5050-4c0d-98b0-30bb32fd5fa8" time="1373540864628" ignored="false" />
     <file path="/RatingRepository.php" changelist="1b7835ae-5050-4c0d-98b0-30bb32fd5fa8" time="1375263446112" ignored="false" />
     <file path="/AlbumRepository.php" changelist="1b7835ae-5050-4c0d-98b0-30bb32fd5fa8" time="1375775037621" ignored="false" />
@@ -58,6 +60,28 @@
     <file path="$PROJECT_DIR$/../invest/app/config/rest.yml" changelist="1b7835ae-5050-4c0d-98b0-30bb32fd5fa8" time="1375780028218" ignored="false" />
     <file path="/rest.yml" changelist="1b7835ae-5050-4c0d-98b0-30bb32fd5fa8" time="1375780028218" ignored="false" />
     <file path="$PROJECT_DIR$/../invest/app/cache/dev/appDevDebugProjectContainer.xml" changelist="1b7835ae-5050-4c0d-98b0-30bb32fd5fa8" time="1375780049467" ignored="false" />
+    <file path="$PROJECT_DIR$/../trading/src/JJ/MainBundle/Entity/Basic.php" changelist="1b7835ae-5050-4c0d-98b0-30bb32fd5fa8" time="1377985906739" ignored="false" />
+    <file path="/Basic.php" changelist="1b7835ae-5050-4c0d-98b0-30bb32fd5fa8" time="1377983369642" ignored="false" />
+    <file path="$PROJECT_DIR$/../trading/src/JJ/MainBundle/Entity/Price.php" changelist="1b7835ae-5050-4c0d-98b0-30bb32fd5fa8" time="1377985226971" ignored="false" />
+    <file path="$PROJECT_DIR$/../trading/src/JJ/MainBundle/Entity/Pair.php" changelist="1b7835ae-5050-4c0d-98b0-30bb32fd5fa8" time="1377979180110" ignored="false" />
+    <file path="$PROJECT_DIR$/../trading/src/JJ/MainBundle/Manager/BasicManager.php" changelist="1b7835ae-5050-4c0d-98b0-30bb32fd5fa8" time="1377987340384" ignored="false" />
+    <file path="$PROJECT_DIR$/../trading/src/JJ/MainBundle/Resources/config/services.xml" changelist="1b7835ae-5050-4c0d-98b0-30bb32fd5fa8" time="1377977846375" ignored="false" />
+    <file path="$PROJECT_DIR$/../trading/src/JJ/MainBundle/Command/BasicCommand.php" changelist="1b7835ae-5050-4c0d-98b0-30bb32fd5fa8" time="1377981982843" ignored="false" />
+    <file path="/BasicCommand.php" changelist="1b7835ae-5050-4c0d-98b0-30bb32fd5fa8" time="1377981692493" ignored="false" />
+    <file path="/Price.php" changelist="1b7835ae-5050-4c0d-98b0-30bb32fd5fa8" time="1377985217786" ignored="false" />
+    <file path="/BasicManager.php" changelist="1b7835ae-5050-4c0d-98b0-30bb32fd5fa8" time="1377987339520" ignored="false" />
+    <file path="$PROJECT_DIR$/../trading/src/JJ/MainBundle/Controller/BasicController.php" changelist="1b7835ae-5050-4c0d-98b0-30bb32fd5fa8" time="1377982372923" ignored="false" />
+    <file path="/BasicController.php" changelist="1b7835ae-5050-4c0d-98b0-30bb32fd5fa8" time="1377982372923" ignored="false" />
+    <file path="/basic.html.twig" changelist="1b7835ae-5050-4c0d-98b0-30bb32fd5fa8" time="1377983300166" ignored="false" />
+    <file path="$PROJECT_DIR$/../trading/src/JJ/MainBundle/Resources/views/Basic/basic.html.twig" changelist="1b7835ae-5050-4c0d-98b0-30bb32fd5fa8" time="1377983300166" ignored="false" />
+    <file path="$PROJECT_DIR$/../trading/src/JJ/MainBundle/Resources/views/Basic/basic_up.html.twig" changelist="1b7835ae-5050-4c0d-98b0-30bb32fd5fa8" time="1377987385111" ignored="false" />
+    <file path="$PROJECT_DIR$/../trading/src/JJ/MainBundle/Resources/views/Basic/basic_down.html.twig" changelist="1b7835ae-5050-4c0d-98b0-30bb32fd5fa8" time="1377984787307" ignored="false" />
+    <file path="/basic_down.html.twig" changelist="1b7835ae-5050-4c0d-98b0-30bb32fd5fa8" time="1377984347006" ignored="false" />
+    <file path="/basic_doji.html.twig" changelist="1b7835ae-5050-4c0d-98b0-30bb32fd5fa8" time="1377984405190" ignored="false" />
+    <file path="$PROJECT_DIR$/../trading/src/JJ/MainBundle/Resources/views/Basic/basic_doji.html.twig" changelist="1b7835ae-5050-4c0d-98b0-30bb32fd5fa8" time="1377984802254" ignored="false" />
+    <file path="/basic_up.html.twig" changelist="1b7835ae-5050-4c0d-98b0-30bb32fd5fa8" time="1377987309369" ignored="false" />
+    <file path="$PROJECT_DIR$/../trading/src/JJ/MainBundle/Entity/BasicRepository.php" changelist="1b7835ae-5050-4c0d-98b0-30bb32fd5fa8" time="1377986266394" ignored="false" />
+    <file path="/BasicRepository.php" changelist="1b7835ae-5050-4c0d-98b0-30bb32fd5fa8" time="1377986265984" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,7 +157,7 @@
               <file leaf-file-name="getrating.html.twig" pinned="false" current="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/src/My/PadBundle/Resources/views/Play/getrating.html.twig">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state line="45" column="0" selection-start="1313" selection-end="1313" vertical-scroll-proportion="0.72944295">
+                    <state line="45" column="0" selection-start="1313" selection-end="1313" vertical-scroll-proportion="0.7612732">
                       <folding />
                     </state>
                   </provider>
@@ -169,10 +193,10 @@
                   </provider>
                 </entry>
               </file>
-              <file leaf-file-name="AlbumRepository.php" pinned="false" current="true" current-in-tab="true">
+              <file leaf-file-name="AlbumRepository.php" pinned="false" current="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/src/My/PadBundle/Repository/AlbumRepository.php">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state line="105" column="0" selection-start="3345" selection-end="3345" vertical-scroll-proportion="0.04509284">
+                    <state line="104" column="0" selection-start="3293" selection-end="3293" vertical-scroll-proportion="-0.65384614">
                       <folding />
                     </state>
                   </provider>
@@ -187,10 +211,10 @@
                   </provider>
                 </entry>
               </file>
-              <file leaf-file-name="Song.php" pinned="false" current="false" current-in-tab="false">
+              <file leaf-file-name="Song.php" pinned="false" current="true" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/src/My/PadBundle/Entity/Song.php">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state line="170" column="9" selection-start="4335" selection-end="4335" vertical-scroll-proportion="0.0">
+                    <state line="165" column="99" selection-start="4072" selection-end="4072" vertical-scroll-proportion="0.4960212">
                       <folding />
                     </state>
                   </provider>
@@ -224,8 +248,8 @@
         <option value="$PROJECT_DIR$/src/My/PadBundle/Resources/views/Stats/detail.html.twig" />
         <option value="$PROJECT_DIR$/src/My/PadBundle/Resources/views/Play/decisions.html.twig" />
         <option value="$PROJECT_DIR$/src/My/PadBundle/Repository/RatingRepository.php" />
-        <option value="$PROJECT_DIR$/src/My/PadBundle/Entity/Song.php" />
         <option value="$PROJECT_DIR$/src/My/PadBundle/Repository/AlbumRepository.php" />
+        <option value="$PROJECT_DIR$/src/My/PadBundle/Entity/Song.php" />
       </list>
     </option>
   </component>
@@ -262,7 +286,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -521,6 +544,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -539,7 +563,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -547,7 +571,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Framework" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20597652" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20811099" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -694,7 +718,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/My/PadBundle/Resources/views/Play/getrating.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="0" selection-start="1313" selection-end="1313" vertical-scroll-proportion="0.72944295">
+        <state line="45" column="0" selection-start="1313" selection-end="1313" vertical-scroll-proportion="0.7612732">
           <folding />
         </state>
       </provider>
@@ -713,16 +737,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/My/PadBundle/Entity/Song.php">
+    <entry file="file://$PROJECT_DIR$/src/My/PadBundle/Repository/AlbumRepository.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="170" column="9" selection-start="4335" selection-end="4335" vertical-scroll-proportion="0.0">
+        <state line="104" column="0" selection-start="3293" selection-end="3293" vertical-scroll-proportion="-0.65384614">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/My/PadBundle/Repository/AlbumRepository.php">
+    <entry file="file://$PROJECT_DIR$/src/My/PadBundle/Entity/Song.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="105" column="0" selection-start="3345" selection-end="3345" vertical-scroll-proportion="0.04509284">
+        <state line="165" column="99" selection-start="4072" selection-end="4072" vertical-scroll-proportion="0.4960212">
           <folding />
         </state>
       </provider>
